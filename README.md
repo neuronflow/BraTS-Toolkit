@@ -11,7 +11,7 @@ Description:
 
 If you use our work please cite:
 
-Citation
+Citation / Paper link
 
 ## Brats Preprocessor
 Brats Preprocessor comes in two flavors:
@@ -25,8 +25,11 @@ desc
 desc
 
 ## Example Data
-### Example Nifti with facial features to test BraTS Preprocessor
-### Anonymized niftis and code for BraTS Segmentor and Fusionator
+Example nifti with facial features to test BraTS Preprocessor
+`preprocess.py` to show preprocessing of MRI data
+`segment.py` to demonstrate obtaining tumor segmentations
+`fusion.py` to demonstrate generation of consensus fusion
+
 
 ## Contact
 Florian Kofler
