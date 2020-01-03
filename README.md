@@ -16,8 +16,8 @@ Citation / Paper link
 ## Brats Preprocessor
 Brats Preprocessor comes in two flavors:
 
-*A) with a graphical user interface, which you can find here: https://neuronflow.github.io/brats-preprocessor/
-*B) as a python CLI package for which you can continue reading
+* A) with a graphical user interface, which you can find here: https://neuronflow.github.io/brats-preprocessor/
+* B) as a python CLI package for which you can continue reading
 
 ## Brats Segmentor
 desc   
@@ -28,9 +28,9 @@ desc
 ## Example Data
 Example nifti with facial features to test BraTS Preprocessor
 
-*`preprocess.py` to show preprocessing of MRI data
-*`segment.py` to demonstrate obtaining tumor segmentations
-*`fusion.py` to demonstrate generation of consensus fusion
+* `preprocess.py` to show preprocessing of MRI data
+* `segment.py` to demonstrate obtaining tumor segmentations
+* `fusion.py` to demonstrate generation of consensus fusion
 
 
 ## Contact
