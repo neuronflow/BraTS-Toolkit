@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsApplyTransforms -d 3 -i data/tmp/OtherEXampleFromTCIA/masks_hdbet_native-space/OtherEXampleFromTCIA_hdbet_mask_native_t1.nii.gz -r data/tmp/OtherEXampleFromTCIA/raw_niftis/OtherEXampleFromTCIA_native_t2.nii.gz -t [data/tmp/OtherEXampleFromTCIA/registrations/OtherEXampleFromTCIA_t2_to_t1_0GenericAffine.mat, 1] -n NearestNeighbor --float 1 -o data/tmp/OtherEXampleFromTCIA/masks_hdbet_native-space/OtherEXampleFromTCIA_hdbet_mask_native_t2.nii.gz
+************************************************
+************************************************
+start time: 2020-01-05 16:55:30.986887
+end time: 16:55:31.118403
+time elapsed: 0.002191758155822754 minutes
+************************************************

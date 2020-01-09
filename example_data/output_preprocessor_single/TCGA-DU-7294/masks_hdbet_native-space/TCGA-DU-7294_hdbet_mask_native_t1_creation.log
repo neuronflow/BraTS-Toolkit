@@ -1,0 +1,31 @@
+
+########################
+If you are using hd-bet, please cite the following paper:
+Isensee F, Schell M, Tursunova I, Brugnara G, Bonekamp D, Neuberger U, Wick A, Schlemmer HP, Heiland S, Wick W,Bendszus M, Maier-Hein KH, Kickingereder P. Automated brain extraction of multi-sequence MRI using artificialneural networks. arXiv preprint arXiv:1901.11341, 2019.
+########################
+
+Downloading https://zenodo.org/record/2540695/files/0.model?download=1 ...
+Downloading https://zenodo.org/record/2540695/files/1.model?download=1 ...
+Downloading https://zenodo.org/record/2540695/files/2.model?download=1 ...
+Downloading https://zenodo.org/record/2540695/files/3.model?download=1 ...
+Downloading https://zenodo.org/record/2540695/files/4.model?download=1 ...
+File: /data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t1.nii.gz
+preprocessing...
+image shape after preprocessing:  (113, 160, 160)
+prediction (CNN id)...
+0
+1
+2
+3
+4
+running postprocessing... 
+exporting segmentation...
+
+************************************************
+subprocess call: hd-bet -i /data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t1.nii.gz -o /data/tmp/TCGA-DU-7294/hdbet_native-space/TCGA-DU-7294_hdbet_native_t1.nii.gz -s 1
+************************************************
+************************************************
+start time: 2020-01-06 00:53:35.672235
+end time: 00:56:12.652052
+time elapsed: 2.6163310766220094 minutes
+************************************************

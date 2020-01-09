@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsRegistration -d 3 -r [app/project_e/image_processing/brats_conversion/brats_niftis/t1_brats_space.nii, data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t1.nii.gz, 0] -t rigid[0.1] -m Mattes[app/project_e/image_processing/brats_conversion/brats_niftis/t1_brats_space.nii,data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t1.nii.gz, 1, 32, Regular, 0.5] -c [1000x500x250, 1e-6, 10] -s 3x2x1vox -f 8x4x2 -l 1 -z 1 -n BSpline[3] --float 1 -o [data/tmp/TCGA-DU-7294/registrations/TCGA-DU-7294_native_t1_to_brats_]
+************************************************
+************************************************
+start time: 2020-01-05 16:53:18.404796
+end time: 16:53:26.037502
+time elapsed: 0.12721195220947265 minutes
+************************************************

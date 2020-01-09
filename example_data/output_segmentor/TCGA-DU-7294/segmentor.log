@@ -1,0 +1,272 @@
+2020-01-06 00:28:20,593 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:28:20,593 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 00:28:20,593 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:28:20,593 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpq7_g947d
+2020-01-06 00:28:20,593 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpq7_g947d/results
+2020-01-06 00:28:20,593 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 00:28:20,593 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 00:28:20,593 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:28:20,593 DEBUG:FILENAME is: scan.nii.gz
+2020-01-06 00:28:20,594 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:28:20,594 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpfwv4ydjv
+2020-01-06 00:28:20,594 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpfwv4ydjv/results
+2020-01-06 00:28:20,594 INFO:Called singleSegment with docker: scan
+2020-01-06 00:28:20,594 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii', 't1c': 't1ce.nii', 't2': 't2.nii', 'fla': 'flair.nii'}
+2020-01-06 00:28:20,594 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:28:20,594 DEBUG:FILENAME is: xfeng.nii.gz
+2020-01-06 00:28:20,594 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:28:20,594 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvqa7uc_0
+2020-01-06 00:28:20,594 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvqa7uc_0/results
+2020-01-06 00:28:20,594 INFO:Called singleSegment with docker: xfeng
+2020-01-06 00:28:20,594 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 00:28:20,594 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:28:20,594 DEBUG:FILENAME is: lfb_rwth.nii.gz
+2020-01-06 00:28:20,594 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:28:20,594 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp67_acr1h
+2020-01-06 00:28:20,594 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp67_acr1h/results
+2020-01-06 00:28:20,594 INFO:Called singleSegment with docker: lfb_rwth
+2020-01-06 00:28:20,595 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1ce.nii.gz', 't2': 't2.nii.gz', 'fla': 'flair.nii.gz'}
+2020-01-06 00:28:20,595 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:28:20,595 DEBUG:FILENAME is: zyx_2019.nii.gz
+2020-01-06 00:28:20,595 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:28:20,595 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7x4_dx_u
+2020-01-06 00:28:20,595 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7x4_dx_u/results
+2020-01-06 00:28:20,595 INFO:Called singleSegment with docker: zyx_2019
+2020-01-06 00:28:20,595 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 'pat_t1.nii.gz', 't1c': 'pat_t1ce.nii.gz', 't2': 'pat_t2.nii.gz', 'fla': 'pat_flair.nii.gz'}
+2020-01-06 00:28:20,595 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:28:20,595 DEBUG:FILENAME is: scan_2019.nii.gz
+2020-01-06 00:28:20,595 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:28:20,595 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmphrkaeu5u
+2020-01-06 00:28:20,595 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmphrkaeu5u/results
+2020-01-06 00:28:20,595 INFO:Called singleSegment with docker: scan_2019
+2020-01-06 00:28:20,595 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 'pat_t1.nii.gz', 't1c': 'pat_t1ce.nii.gz', 't2': 'pat_t2.nii.gz', 'fla': 'pat_flair.nii.gz'}
+2020-01-06 00:29:28,152 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:29:28,152 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 00:29:28,152 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:29:28,152 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpyw6t54_6
+2020-01-06 00:29:28,152 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpyw6t54_6/results
+2020-01-06 00:29:28,152 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 00:29:28,153 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 00:29:28,294 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpyw6t54_6/t1.nii.gz
+2020-01-06 00:29:28,910 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpyw6t54_6/t2.nii.gz
+2020-01-06 00:29:29,420 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpyw6t54_6/t1c.nii.gz
+2020-01-06 00:29:30,020 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpyw6t54_6/fla.nii.gz
+2020-01-06 00:29:30,438 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 00:29:30,438 INFO:[Weborchestra][Info] Starting the Segmentation with mic-dkfz now
+2020-01-06 00:30:44,603 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:30:44,603 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 00:30:44,603 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:30:44,603 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp4282pusz
+2020-01-06 00:30:44,603 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp4282pusz/results
+2020-01-06 00:30:44,603 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 00:30:44,603 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 00:30:44,750 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp4282pusz/t1.nii.gz
+2020-01-06 00:30:45,338 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp4282pusz/t2.nii.gz
+2020-01-06 00:30:45,851 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp4282pusz/t1c.nii.gz
+2020-01-06 00:30:46,454 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp4282pusz/fla.nii.gz
+2020-01-06 00:30:46,870 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 00:30:46,870 INFO:[Weborchestra][Info] Starting the Segmentation with mic-dkfz now
+2020-01-06 00:31:05,704 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:31:05,704 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 00:31:05,704 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:31:05,704 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpj8p0_cjo
+2020-01-06 00:31:05,704 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpj8p0_cjo/results
+2020-01-06 00:31:05,704 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 00:31:05,704 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 00:31:05,849 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpj8p0_cjo/t1.nii.gz
+2020-01-06 00:31:06,438 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpj8p0_cjo/t2.nii.gz
+2020-01-06 00:31:06,954 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpj8p0_cjo/t1c.nii.gz
+2020-01-06 00:31:07,557 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpj8p0_cjo/fla.nii.gz
+2020-01-06 00:31:07,975 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 00:31:07,975 INFO:[Weborchestra][Info] Starting the Segmentation with mic-dkfz now
+2020-01-06 00:31:46,630 INFO:Container exited without error
+2020-01-06 00:31:46,631 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 00:31:46,722 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 00:31:46,722 DEBUG:FILENAME is: scan.nii.gz
+2020-01-06 00:31:46,722 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 00:31:46,723 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp9x37th9v
+2020-01-06 00:31:46,723 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp9x37th9v/results
+2020-01-06 00:31:46,723 INFO:Called singleSegment with docker: scan
+2020-01-06 00:31:46,723 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii', 't1c': 't1ce.nii', 't2': 't2.nii', 'fla': 'flair.nii'}
+2020-01-06 00:31:46,834 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp9x37th9v/t1.nii
+2020-01-06 00:31:46,953 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp9x37th9v/t2.nii
+2020-01-06 00:31:47,082 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp9x37th9v/t1ce.nii
+2020-01-06 00:31:47,203 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp9x37th9v/flair.nii
+2020-01-06 00:31:47,220 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 00:31:47,221 INFO:[Weborchestra][Info] Starting the Segmentation with scan now
+2020-01-06 02:08:20,508 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:08:20,508 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 02:08:20,508 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:08:20,509 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpjn2j67i2
+2020-01-06 02:08:20,509 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpjn2j67i2/results
+2020-01-06 02:08:20,509 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 02:08:20,509 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 02:08:20,670 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpjn2j67i2/t1.nii.gz
+2020-01-06 02:08:21,264 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpjn2j67i2/t2.nii.gz
+2020-01-06 02:08:21,780 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpjn2j67i2/t1c.nii.gz
+2020-01-06 02:08:22,383 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpjn2j67i2/fla.nii.gz
+2020-01-06 02:08:22,814 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:08:22,814 INFO:[Weborchestra][Info] Starting the Segmentation with mic-dkfz now
+2020-01-06 02:09:09,617 INFO:Container exited without error
+2020-01-06 02:09:09,617 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 02:09:09,706 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:09:09,706 DEBUG:FILENAME is: scan.nii.gz
+2020-01-06 02:09:09,706 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:09:09,707 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpx1ko36ns
+2020-01-06 02:09:09,707 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpx1ko36ns/results
+2020-01-06 02:09:09,707 INFO:Called singleSegment with docker: scan
+2020-01-06 02:09:09,707 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii', 't1c': 't1ce.nii', 't2': 't2.nii', 'fla': 'flair.nii'}
+2020-01-06 02:09:09,811 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpx1ko36ns/t1.nii
+2020-01-06 02:09:09,922 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpx1ko36ns/t2.nii
+2020-01-06 02:09:10,044 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpx1ko36ns/t1ce.nii
+2020-01-06 02:09:10,156 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpx1ko36ns/flair.nii
+2020-01-06 02:09:10,172 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:09:10,172 INFO:[Weborchestra][Info] Starting the Segmentation with scan now
+2020-01-06 02:21:24,066 INFO:Container exited without error
+2020-01-06 02:21:24,067 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 02:21:24,343 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:21:24,343 DEBUG:FILENAME is: xfeng.nii.gz
+2020-01-06 02:21:24,343 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:21:24,343 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmppf9ek2tj
+2020-01-06 02:21:24,343 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmppf9ek2tj/results
+2020-01-06 02:21:24,343 INFO:Called singleSegment with docker: xfeng
+2020-01-06 02:21:24,344 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 02:21:24,449 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmppf9ek2tj/t1.nii.gz
+2020-01-06 02:21:25,037 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmppf9ek2tj/t2.nii.gz
+2020-01-06 02:21:25,547 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmppf9ek2tj/t1c.nii.gz
+2020-01-06 02:21:26,191 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmppf9ek2tj/fla.nii.gz
+2020-01-06 02:21:26,619 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:21:26,619 INFO:[Weborchestra][Info] Starting the Segmentation with xfeng now
+2020-01-06 02:30:50,038 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:30:50,038 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 02:30:50,038 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:30:50,038 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvmo7hxl5
+2020-01-06 02:30:50,038 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvmo7hxl5/results
+2020-01-06 02:30:50,038 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 02:30:50,038 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 02:30:50,182 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvmo7hxl5/t1.nii.gz
+2020-01-06 02:30:50,768 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvmo7hxl5/t2.nii.gz
+2020-01-06 02:30:51,274 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvmo7hxl5/t1c.nii.gz
+2020-01-06 02:30:51,874 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvmo7hxl5/fla.nii.gz
+2020-01-06 02:30:52,293 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:30:52,294 INFO:[Weborchestra][Info] Starting the Segmentation with mic-dkfz now
+2020-01-06 02:31:32,497 INFO:Container exited without error
+2020-01-06 02:31:32,498 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 02:31:32,585 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:31:32,586 DEBUG:FILENAME is: scan.nii.gz
+2020-01-06 02:31:32,586 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:31:32,586 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp19jl9x7i
+2020-01-06 02:31:32,586 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp19jl9x7i/results
+2020-01-06 02:31:32,586 INFO:Called singleSegment with docker: scan
+2020-01-06 02:31:32,586 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii', 't1c': 't1ce.nii', 't2': 't2.nii', 'fla': 'flair.nii'}
+2020-01-06 02:31:32,691 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp19jl9x7i/t1.nii
+2020-01-06 02:31:32,804 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp19jl9x7i/t2.nii
+2020-01-06 02:31:32,925 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp19jl9x7i/t1ce.nii
+2020-01-06 02:31:33,037 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp19jl9x7i/flair.nii
+2020-01-06 02:31:33,053 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:31:33,053 INFO:[Weborchestra][Info] Starting the Segmentation with scan now
+2020-01-06 02:43:43,045 INFO:Container exited without error
+2020-01-06 02:43:43,045 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 02:43:43,315 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:43:43,315 DEBUG:FILENAME is: xfeng.nii.gz
+2020-01-06 02:43:43,315 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:43:43,316 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvx97l_39
+2020-01-06 02:43:43,316 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvx97l_39/results
+2020-01-06 02:43:43,316 INFO:Called singleSegment with docker: xfeng
+2020-01-06 02:43:43,316 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 02:43:43,420 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvx97l_39/t1.nii.gz
+2020-01-06 02:43:44,004 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvx97l_39/t2.nii.gz
+2020-01-06 02:43:44,512 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvx97l_39/t1c.nii.gz
+2020-01-06 02:43:45,111 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpvx97l_39/fla.nii.gz
+2020-01-06 02:43:45,532 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:43:45,532 INFO:[Weborchestra][Info] Starting the Segmentation with xfeng now
+2020-01-06 02:48:50,755 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:48:50,755 DEBUG:FILENAME is: mic-dkfz.nii.gz
+2020-01-06 02:48:50,755 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:48:50,755 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpf087pyes
+2020-01-06 02:48:50,755 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpf087pyes/results
+2020-01-06 02:48:50,755 INFO:Called singleSegment with docker: mic-dkfz
+2020-01-06 02:48:50,755 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 02:48:50,895 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpf087pyes/t1.nii.gz
+2020-01-06 02:48:51,559 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpf087pyes/t2.nii.gz
+2020-01-06 02:48:52,084 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpf087pyes/t1c.nii.gz
+2020-01-06 02:48:52,715 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpf087pyes/fla.nii.gz
+2020-01-06 02:48:53,161 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:48:53,161 INFO:[Weborchestra][Info] Starting the Segmentation with mic-dkfz now
+2020-01-06 02:49:34,859 INFO:Container exited without error
+2020-01-06 02:49:34,859 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 02:49:34,947 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 02:49:34,947 DEBUG:FILENAME is: scan.nii.gz
+2020-01-06 02:49:34,947 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 02:49:34,947 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp5wf4yyy8
+2020-01-06 02:49:34,947 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp5wf4yyy8/results
+2020-01-06 02:49:34,947 INFO:Called singleSegment with docker: scan
+2020-01-06 02:49:34,947 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii', 't1c': 't1ce.nii', 't2': 't2.nii', 'fla': 'flair.nii'}
+2020-01-06 02:49:35,055 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp5wf4yyy8/t1.nii
+2020-01-06 02:49:35,167 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp5wf4yyy8/t2.nii
+2020-01-06 02:49:35,291 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp5wf4yyy8/t1ce.nii
+2020-01-06 02:49:35,405 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp5wf4yyy8/flair.nii
+2020-01-06 02:49:35,421 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 02:49:35,421 INFO:[Weborchestra][Info] Starting the Segmentation with scan now
+2020-01-06 03:01:40,944 INFO:Container exited without error
+2020-01-06 03:01:40,945 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 03:01:41,219 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 03:01:41,219 DEBUG:FILENAME is: xfeng.nii.gz
+2020-01-06 03:01:41,219 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 03:01:41,219 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7b6s_sd_
+2020-01-06 03:01:41,219 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7b6s_sd_/results
+2020-01-06 03:01:41,219 INFO:Called singleSegment with docker: xfeng
+2020-01-06 03:01:41,219 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1c.nii.gz', 't2': 't2.nii.gz', 'fla': 'fla.nii.gz'}
+2020-01-06 03:01:41,328 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7b6s_sd_/t1.nii.gz
+2020-01-06 03:01:41,930 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7b6s_sd_/t2.nii.gz
+2020-01-06 03:01:42,481 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7b6s_sd_/t1c.nii.gz
+2020-01-06 03:01:43,093 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp7b6s_sd_/fla.nii.gz
+2020-01-06 03:01:43,521 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 03:01:43,521 INFO:[Weborchestra][Info] Starting the Segmentation with xfeng now
+2020-01-06 03:14:50,606 INFO:Container exited without error
+2020-01-06 03:14:50,607 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 03:14:50,696 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 03:14:50,696 DEBUG:FILENAME is: lfb_rwth.nii.gz
+2020-01-06 03:14:50,696 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 03:14:50,696 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpthfznvfd
+2020-01-06 03:14:50,696 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpthfznvfd/results
+2020-01-06 03:14:50,696 INFO:Called singleSegment with docker: lfb_rwth
+2020-01-06 03:14:50,697 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 't1.nii.gz', 't1c': 't1ce.nii.gz', 't2': 't2.nii.gz', 'fla': 'flair.nii.gz'}
+2020-01-06 03:14:50,806 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpthfznvfd/t1.nii.gz
+2020-01-06 03:14:51,406 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpthfznvfd/t2.nii.gz
+2020-01-06 03:14:51,935 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpthfznvfd/t1ce.nii.gz
+2020-01-06 03:14:52,545 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpthfznvfd/flair.nii.gz
+2020-01-06 03:14:52,973 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 03:14:52,973 INFO:[Weborchestra][Info] Starting the Segmentation with lfb_rwth now
+2020-01-06 03:30:31,595 INFO:Container exited without error
+2020-01-06 03:30:31,595 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 03:30:32,090 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 03:30:32,090 DEBUG:FILENAME is: zyx_2019.nii.gz
+2020-01-06 03:30:32,090 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 03:30:32,090 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpb5t7tshl
+2020-01-06 03:30:32,090 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpb5t7tshl/results
+2020-01-06 03:30:32,090 INFO:Called singleSegment with docker: zyx_2019
+2020-01-06 03:30:32,090 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 'pat_t1.nii.gz', 't1c': 'pat_t1ce.nii.gz', 't2': 'pat_t2.nii.gz', 'fla': 'pat_flair.nii.gz'}
+2020-01-06 03:30:32,197 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpb5t7tshl/pat_t1.nii.gz
+2020-01-06 03:30:32,817 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpb5t7tshl/pat_t2.nii.gz
+2020-01-06 03:30:33,329 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpb5t7tshl/pat_t1ce.nii.gz
+2020-01-06 03:30:33,943 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmpb5t7tshl/pat_flair.nii.gz
+2020-01-06 03:30:34,375 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 03:30:34,375 INFO:[Weborchestra][Info] Starting the Segmentation with zyx_2019 now
+2020-01-06 03:31:12,996 INFO:Container exited without error
+2020-01-06 03:31:12,997 INFO:[Weborchestra][Success] Segmentation saved
+2020-01-06 03:31:13,263 DEBUG:DIRNAME is: /home/florian/flow/brats-toolkit-development/example_data/output_segmentor/TCGA-DU-7294
+2020-01-06 03:31:13,264 DEBUG:FILENAME is: scan_2019.nii.gz
+2020-01-06 03:31:13,264 INFO:Now running a new set of segmentations on input: example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-space
+2020-01-06 03:31:13,264 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp21mjxtqs
+2020-01-06 03:31:13,264 DEBUG:/home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp21mjxtqs/results
+2020-01-06 03:31:13,264 INFO:Called singleSegment with docker: scan_2019
+2020-01-06 03:31:13,264 INFO:[Weborchestra][Success]Loaded fileformat: {'t1': 'pat_t1.nii.gz', 't1c': 'pat_t1ce.nii.gz', 't2': 'pat_t2.nii.gz', 'fla': 'pat_flair.nii.gz'}
+2020-01-06 03:31:13,371 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp21mjxtqs/pat_t1.nii.gz
+2020-01-06 03:31:13,978 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp21mjxtqs/pat_t2.nii.gz
+2020-01-06 03:31:14,499 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp21mjxtqs/pat_t1ce.nii.gz
+2020-01-06 03:31:15,107 INFO:[Weborchestra][Info] Writing to path /home/florian/flow/brats-toolkit-development/src/orchestra/orchestra/tmp21mjxtqs/pat_flair.nii.gz
+2020-01-06 03:31:15,530 INFO:[Weborchestra][Info] Images saved correctly
+2020-01-06 03:31:15,530 INFO:[Weborchestra][Info] Starting the Segmentation with scan_2019 now
+2020-01-06 03:42:16,254 INFO:Container exited without error
+2020-01-06 03:42:16,255 INFO:[Weborchestra][Success] Segmentation saved

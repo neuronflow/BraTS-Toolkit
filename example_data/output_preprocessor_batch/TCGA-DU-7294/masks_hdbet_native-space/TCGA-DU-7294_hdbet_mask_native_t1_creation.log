@@ -1,0 +1,26 @@
+
+########################
+If you are using hd-bet, please cite the following paper:
+Isensee F, Schell M, Tursunova I, Brugnara G, Bonekamp D, Neuberger U, Wick A, Schlemmer HP, Heiland S, Wick W,Bendszus M, Maier-Hein KH, Kickingereder P. Automated brain extraction of multi-sequence MRI using artificialneural networks. arXiv preprint arXiv:1901.11341, 2019.
+########################
+
+File: /data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t1.nii.gz
+preprocessing...
+image shape after preprocessing:  (113, 160, 160)
+prediction (CNN id)...
+0
+1
+2
+3
+4
+running postprocessing... 
+exporting segmentation...
+
+************************************************
+subprocess call: hd-bet -i /data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t1.nii.gz -o /data/tmp/TCGA-DU-7294/hdbet_native-space/TCGA-DU-7294_hdbet_native_t1.nii.gz -s 1
+************************************************
+************************************************
+start time: 2020-01-05 16:55:30.898472
+end time: 16:56:15.398229
+time elapsed: 0.7416632413864136 minutes
+************************************************

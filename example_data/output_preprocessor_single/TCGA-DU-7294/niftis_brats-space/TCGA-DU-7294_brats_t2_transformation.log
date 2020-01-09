@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsApplyTransforms -d 3 -i data/tmp/TCGA-DU-7294/niftis_t1-space/TCGA-DU-7294_t1s_t2.nii.gz -r app/project_e/image_processing/brats_conversion/brats_niftis/t1_brats_space.nii -t data/tmp/TCGA-DU-7294/registrations/TCGA-DU-7294_native_t1_to_brats_0GenericAffine.mat -n BSpline[3] --float 1 -o data/tmp/TCGA-DU-7294/niftis_brats-space/TCGA-DU-7294_brats_t2.nii.gz
+************************************************
+************************************************
+start time: 2020-01-06 00:53:27.182053
+end time: 00:53:30.908292
+time elapsed: 0.06210380792617798 minutes
+************************************************

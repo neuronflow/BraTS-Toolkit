@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsRegistration -d 3 -r [data/tmp/OtherEXampleFromTCIA/raw_niftis/OtherEXampleFromTCIA_native_t1.nii.gz, data/tmp/OtherEXampleFromTCIA/raw_niftis/OtherEXampleFromTCIA_native_fla.nii.gz, 0] -t rigid[0.1] -m Mattes[data/tmp/OtherEXampleFromTCIA/raw_niftis/OtherEXampleFromTCIA_native_t1.nii.gz,data/tmp/OtherEXampleFromTCIA/raw_niftis/OtherEXampleFromTCIA_native_fla.nii.gz, 1, 32, Regular, 0.5] -c [1000x500x250, 1e-6, 10] -s 3x2x1vox -f 8x4x2 -l 1 -z 1 -n BSpline[3] --float 1 -o [data/tmp/OtherEXampleFromTCIA/registrations/OtherEXampleFromTCIA_fla_to_t1_]
+************************************************
+************************************************
+start time: 2020-01-05 16:51:57.433116
+end time: 16:52:04.652683
+time elapsed: 0.12032618522644042 minutes
+************************************************

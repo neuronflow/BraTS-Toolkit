@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsApplyTransforms -d 3 -i data/tmp/TCGA-DU-7294/masks_hdbet_native-space/TCGA-DU-7294_hdbet_mask_native_t1.nii.gz -r data/tmp/TCGA-DU-7294/raw_niftis/TCGA-DU-7294_native_t2.nii.gz -t [data/tmp/TCGA-DU-7294/registrations/TCGA-DU-7294_t2_to_t1_0GenericAffine.mat, 1] -n NearestNeighbor --float 1 -o data/tmp/TCGA-DU-7294/masks_hdbet_native-space/TCGA-DU-7294_hdbet_mask_native_t2.nii.gz
+************************************************
+************************************************
+start time: 2020-01-05 16:56:17.087499
+end time: 16:56:17.641881
+time elapsed: 0.009239312012990315 minutes
+************************************************
