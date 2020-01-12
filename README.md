@@ -30,6 +30,11 @@ Activates GPU defacing - not implemented yet falls back to `cpu_defacing` for th
 #### CPU defacing: "cpu_defacing"
 Activates mri-deface to deface using CPU. Use this mode for further processing on the Kraken (https://neuronflow.github.io/kraken/)
 
+### Single vs. batch processing
+ BraTS preprocessor offers processing files in `batch` or `single` mode. Please have a look at the respective example scripts / CLI commands for information how to use them.
+ 
+ For faster computation we strictly recommend the `batch` processing mode, which avoids additional overhead of spawning and shutting down multiple docker containers and instead does all the processing in one container.  
+
 ### Graphical User Interface (GUI)
 You can find instructions to use and download the GUI variant here: https://neuronflow.github.io/BraTS-Preprocessor/
 
@@ -37,7 +42,11 @@ You can find instructions to use and download the GUI variant here: https://neur
 Please have a look at `0_preprocessing_batch.py` and `0_preprocessing_single.py` in this repository for a demo application.
 
 ### Command Line Interface (CLI)
-TODO - documentation coming soon
+#### single file processing
+Type `brats-preprocess -h` after installing the python package to see available options.
+#### batch file processing
+Type `brats-batch-preprocess -h` after installing the python package to see available options.
+
 
 ## Brats Segmentor
 BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations.
@@ -45,8 +54,7 @@ BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorith
 Please have a look at `1_segmentation.py` in this repository for a demo application.
 
 ### Command Line Interface (CLI)
-TODO - documentation coming soon
-
+Type `brats-segment -h` after installing the python package to see available options.
 
 ## Brats Fusionator
 BraTS Fusionator can combine the resulting candidate segmentations into consensus segmentations using fusion methods such as majority voting and iterative SIMPLE fusion.
@@ -54,7 +62,7 @@ BraTS Fusionator can combine the resulting candidate segmentations into consensu
 Please have a look at `2_fusion.py` in this repository for a demo application.
 
 ### Command Line Interface (CLI)
-TODO - documentation coming soon
+Type `brats-fuse -h` after installing the python package to see available options.
 
 ## Source code
 The source code for BraTS Toolkit can be found here: https://github.com/neuronflow/BraTS-Toolkit-Source
