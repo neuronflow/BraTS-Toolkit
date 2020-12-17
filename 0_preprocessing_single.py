@@ -15,4 +15,4 @@ outputDir = "example_data/output_preprocessor_single/TCGA-DU-7294"
 
 # execute it
 prep.single_preprocess(t1File=t1File, t1cFile=t1cFile, t2File=t2File, flaFile=flaFile,
-                       outputFolder=outputDir, mode="cpu", confirm=True, skipUpdate=False)
+                       outputFolder=outputDir, mode="cpu", confirm=True, skipUpdate=False, gpuid='0')

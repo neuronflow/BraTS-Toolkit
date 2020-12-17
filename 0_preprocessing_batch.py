@@ -13,4 +13,4 @@ outputDir = "example_data/output_preprocessor_batch"
 
 # execute it
 prep.batch_preprocess(exam_import_folder=inputDir,
-                      exam_export_folder=outputDir, mode="gpu", confirm=True, skipUpdate=False)
+                      exam_export_folder=outputDir, mode="gpu", confirm=True, skipUpdate=False, gpuid='0')
