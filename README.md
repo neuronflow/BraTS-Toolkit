@@ -32,7 +32,7 @@ Please also cite the following original authors of the algorithms who make this 
 | gbmnet    | Nuechterlein, N., & Mehta, S. (2019). 3D-ESPNet with Pyramidal Refinement for Volumetric Brain Tumor Image Segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (pp. 245–253). Springer International Publishing.                                     |
 | xyz_2019  | Zhao, Y.X., Zhang, Y.M., Song, M., & Liu, C.L. (2019). Multi-view Semi-supervised 3D Whole Brain Segmentation with a Self-ensemble Network. In Medical Image Computing and Computer Assisted Intervention – MICCAI 2019 (pp. 256–265). Springer International Publishing.                      |
 | scan_2019 | McKinley, R., Rebsamen, M., Meier, R., & Wiest, R. (2020). Triplanar Ensemble of 3D-to-2D CNNs with Label-Uncertainty for Brain Tumor Segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (pp. 379–387). Springer International Publishing.          |
-| isen2020 | upcoming publication          |
+| isen-20 | upcoming publication          |
 | hnfnetv1-20 | upcoming publication          |
 | yixinmpl-20 | upcoming publication          |
 | sanet0-20 | upcoming publication          |
