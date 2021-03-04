@@ -15,6 +15,10 @@ To install the most up to date version from the master branch please use the fol
 pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit
 ```
 
+## Issues
+When running into issues please use the issue tracker here on Github: https://github.com/neuronflow/BraTS-Toolkit/issues
+So others can profit and contribute as well.
+
 ## Citation
 If you use BraTS Toolkit please cite:
 
