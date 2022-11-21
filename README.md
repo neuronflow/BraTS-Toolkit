@@ -15,6 +15,10 @@ To install the most up to date version from the master branch please use the fol
 pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit
 ```
 
+We recommended installation in a virtual environment based on Python 3.10
+
+Further, NVIDIA Docker Toolkit needs to be installed. Further instructions here: https://neuronflow.github.io/BraTS-Preprocessor/#dockerinstallation
+
 ## Issues
 When running into issues please use the issue tracker here on Github: https://github.com/neuronflow/BraTS-Toolkit/issues
 So others can profit and contribute as well.
