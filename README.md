@@ -26,6 +26,17 @@ https://www.frontiersin.org/articles/10.3389/fnins.2020.00125/full
 
 Kofler, F., Berger, C., Waldmannstetter, D., Lipkova, J., Ezhov, I., Tetteh, G., Kirschke, J., Zimmer, C., Wiestler, B., & Menze, B. H. (2020). BraTS Toolkit: Translating BraTS Brain Tumor Segmentation Algorithms Into Clinical and Scientific Practice. Frontiers in neuroscience, 14, 125. https://doi.org/10.3389/fnins.2020.00125
 
+```
+@article{kofler2020brats,
+  title={BraTS toolkit: translating BraTS brain tumor segmentation algorithms into clinical and scientific practice},
+  author={Kofler, Florian and Berger, Christoph and Waldmannstetter, Diana and Lipkova, Jana and Ezhov, Ivan and Tetteh, Giles and Kirschke, Jan and Zimmer, Claus and Wiestler, Benedikt and Menze, Bjoern H},
+  journal={Frontiers in neuroscience},
+  pages={125},
+  year={2020},
+  publisher={Frontiers}
+}
+```
+
 Please also cite the following original authors of the algorithms who make this repository and tool possible:
 
 | Docker Image                | Paper                                                                                                                                                                                                                                                                                          |
