@@ -17,7 +17,7 @@ pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master
 
 We recommended installation in a virtual environment based on Python 3.10 .
 
-Further, NVIDIA Docker Toolkit needs to be installed (installation instructions here: https://neuronflow.github.io/BraTS-Preprocessor/#dockerinstallation ).
+Further, NVIDIA Docker Toolkit needs to be installed (installation instructions here: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker and here: https://neuronflow.github.io/BraTS-Preprocessor/#dockerinstallation ).
 
 ## Issues
 When running into issues please use the issue tracker here on Github: https://github.com/neuronflow/BraTS-Toolkit/issues
