@@ -1,0 +1,20 @@
+{
+    "mocker":{
+      "name":"mocker",
+      "author":"Christoph Berger",
+      "fileformat":"gz-b17",
+      "runtime":"runc",
+      "id":"cberger/mockdock",
+      "command":" ",
+      "mountpoint":"/data"
+    },
+    "mocker2":{
+    "name":"mocker",
+    "author":"Christoph Berger",
+    "fileformat":"gz-b17",
+    "runtime":"runc",
+    "id":"cberger/mockdock",
+    "command":" ",
+    "mountpoint":"/data"
+    }
+}

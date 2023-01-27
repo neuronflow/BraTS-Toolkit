@@ -1,0 +1,29 @@
+{
+    "econib":{
+        "name":"econib",
+        "author":"Michal Marcinkiewicz",
+        "fileformat":"gz-b17",
+        "runtime":"runc",
+        "id":"econib/brats-2018",
+        "command":" ",
+        "mountpoint":"/data"
+    },
+    "lfb_rwth":{
+        "name":"lfb_rwth",
+        "author":"Leon Weninger",
+        "fileformat":"gz-b17-t1",
+        "runtime":"runc",
+        "id":"leonweninger/brats18_segmentation",
+        "command":" ",
+        "mountpoint":"/data"
+    },
+    "gbmnet":{
+        "name":"gbmnet",
+        "author":"Nicholas Nuechterlein",
+        "fileformat":"gz-b17-t1",
+        "runtime":"runc",
+        "id":"nknuecht/gbmnet18",
+        "command":"python evaluate.py",
+        "mountpoint":"/data"
+    }
+}

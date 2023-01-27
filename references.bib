@@ -1,0 +1,109 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for Christoph Berger at 2020-08-05 09:01:33 +0200 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{weninger2019,
+	Abstract = {Brain tumor localization and segmentation is an important step in the treatment of brain tumor patients. It is the base for later clinical steps, e.g., a possible resection of the tumor. Hence, an automatic segmentation algorithm would be preferable, as it does not suffer from inter-rater variability. On top, results could be available immediately after the brain imaging procedure. Using this automatic tumor segmentation, it could also be possible to predict the survival of patients. The BraTS 2018 challenge consists of these two tasks: tumor segmentation in 3D-MRI images of brain tumor patients and survival prediction based on these images. For the tumor segmentation, we utilize a two-step approach: First, the tumor is located using a 3D U-net. Second, another 3D U-net -- more complex, but with a smaller output size -- detects subtle differences in the tumor volume, i.e., it segments the located tumor into tumor core, enhanced tumor, and peritumoral edema.},
+	Address = {Cham},
+	Author = {Weninger, Leon and Rippel, Oliver and Koppers, Simon and Merhof, Dorit},
+	Booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+	Date-Added = {2020-08-05 08:59:50 +0200},
+	Date-Modified = {2020-08-05 09:01:00 +0200},
+	Editor = {Crimi, Alessandro and Bakas, Spyridon and Kuijf, Hugo and Keyvan, Farahani and Reyes, Mauricio and van Walsum, Theo},
+	Isbn = {978-3-030-11726-9},
+	Pages = {3--12},
+	Publisher = {Springer International Publishing},
+	Title = {Segmentation of Brain Tumors and Patient Survival Prediction: Methods for the BraTS 2018 Challenge},
+	Year = {2019}}
+
+@inproceedings{nuechterlein2019,
+	Abstract = {Automatic quantitative analysis of structural magnetic resonance (MR) images of brain tumors is critical to the clinical care of glioma patients, and for the future of advanced MR imaging research. In particular, automatic brain tumor segmentation can provide volumes of interest (VOIs) to scale the analysis of advanced MR imaging modalities such as perfusion-weighted imaging (PWI), diffusion-weighted imaging (DTI), and MR spectroscopy (MRS), which is currently hindered by the prohibitive cost and time of manual segmentations. However, automatic brain tumor segmentation is complicated by the high heterogeneity and dimensionality of MR data, and the relatively small size of available datasets. This paper extends ESPNet, a fast and efficient network designed for vanilla 2D semantic segmentation, to challenging 3D data in the medical imaging domain [11]. Even without substantive pre- and post-processing, our model achieves respectable brain tumor segmentation results, while learning only 3.8 million parameters. 3D-ESPNet achieves dice scores of 0.850, 0.665, and 0.782 on whole tumor, enhancing tumor, and tumor core classes on the test set of the 2018 BraTS challenge [1--4, 12]. Our source code is open-source and available at https://github.com/sacmehta/3D-ESPNet.},
+	Address = {Cham},
+	Author = {Nuechterlein, Nicholas and Mehta, Sachin},
+	Booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+	Date-Added = {2020-08-05 08:59:42 +0200},
+	Date-Modified = {2020-08-05 09:00:27 +0200},
+	Editor = {Crimi, Alessandro and Bakas, Spyridon and Kuijf, Hugo and Keyvan, Farahani and Reyes, Mauricio and van Walsum, Theo},
+	Isbn = {978-3-030-11726-9},
+	Pages = {245--253},
+	Publisher = {Springer International Publishing},
+	Title = {3D-ESPNet with Pyramidal Refinement for Volumetric Brain Tumor Image Segmentation},
+	Year = {2019}}
+
+@inproceedings{zhao2019,
+	Abstract = {Despite remarkable progress, 3D whole brain segmentation of structural magnetic resonance imaging (MRI) into a large number of regions (>100) is still difficult due to the lack of annotated data and the limitation of GPU memory. To address these challenges, we propose a semi-supervised segmentation method based on deep neural networks to exploit the plenty of unlabeled data by extending the self-training method, and improve the U-Net model by designing a novel self-ensemble architecture and a random patch-size training strategy. Further, to reduce the model storage and computational cost, we get a compact model by knowledge distillation. Extensive experiments conducted on the MICCAI 2012 dataset demonstrate that our method dramatically outperforms previous methods and has achieved the state-of-the-art performance. Our compact model segments an MRI image within 3 s on a TITAN X GPU, which is much faster than multi-atlas based methods and previous deep learning methods.},
+	Address = {Cham},
+	Author = {Zhao, Yuan-Xing and Zhang, Yan-Ming and Song, Ming and Liu, Cheng-Lin},
+	Booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2019},
+	Date-Added = {2020-08-05 08:59:38 +0200},
+	Date-Modified = {2020-08-05 09:00:49 +0200},
+	Editor = {Shen, Dinggang and Liu, Tianming and Peters, Terry M. and Staib, Lawrence H. and Essert, Caroline and Zhou, Sean and Yap, Pew-Thian and Khan, Ali},
+	Isbn = {978-3-030-32248-9},
+	Pages = {256--265},
+	Publisher = {Springer International Publishing},
+	Title = {Multi-view Semi-supervised 3D Whole Brain Segmentation with a Self-ensemble Network},
+	Year = {2019}}
+
+@inproceedings{mckinley2020triplanar,
+	Abstract = {We introduce a modification of our previous 3D-to-2D fully convolutional architecture, DeepSCAN, replacing batch normalization with instance normalization, and adding a lightweight local attention mechanism. These networks are trained using a previously described loss function which mo els label noise and uncertainty. We present results on the validation dataset of the Multimodal Brain Tumor Segmentation Challenge 2019.},
+	Address = {Cham},
+	Author = {McKinley, Richard and Rebsamen, Michael and Meier, Raphael and Wiest, Roland},
+	Booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+	Date-Added = {2020-08-05 08:59:34 +0200},
+	Date-Modified = {2020-08-05 09:01:14 +0200},
+	Editor = {Crimi, Alessandro and Bakas, Spyridon},
+	Isbn = {978-3-030-46640-4},
+	Pages = {379--387},
+	Publisher = {Springer International Publishing},
+	Title = {Triplanar Ensemble of 3D-to-2D CNNs with Label-Uncertainty for Brain Tumor Segmentation},
+	Year = {2020}}
+
+@inproceedings{isensee2018no,
+	Author = {Isensee, Fabian and Kickingereder, Philipp and Wick, Wolfgang and Bendszus, Martin and Maier-Hein, Klaus H},
+	Booktitle = {International MICCAI Brainlesion Workshop},
+	Date-Added = {2020-08-05 08:52:02 +0200},
+	Date-Modified = {2020-08-05 08:52:02 +0200},
+	Organization = {Springer},
+	Pages = {234--244},
+	Title = {No new-net},
+	Year = {2018}}
+
+@inproceedings{mckinley2018ensembles,
+	Author = {McKinley, Richard and Meier, Raphael and Wiest, Roland},
+	Booktitle = {International MICCAI Brainlesion Workshop},
+	Date-Added = {2020-08-05 08:51:36 +0200},
+	Date-Modified = {2020-08-05 08:51:36 +0200},
+	Organization = {Springer},
+	Pages = {456--465},
+	Title = {Ensembles of densely-connected CNNs with label-uncertainty for brain tumor segmentation},
+	Year = {2018}}
+
+@inproceedings{feng2019,
+	Abstract = {Accurate segmentation of different sub-regions of gliomas including peritumoral edema, necrotic core, enhancing and non-enhancing tumor core from multimodal MRI scans has important clinical relevance in diagnosis, prognosis and treatment of brain tumors. However, due to the highly heterogeneous appearance and shape, segmentation of the sub-regions is very challenging. Recent development using deep learning models has proved its effectiveness in the past several brain segmentation challenges as well as other semantic and medical image segmentation problems. Most models in brain tumor segmentation use a 2D/3D patch to predict the class label for the center voxel and variant patch sizes and scales are used to improve the model performance. However, it has low computation efficiency and also has limited receptive field. U-Net is a widely used network structure for end-to-end segmentation and can be used on the entire image or extracted patches to provide classification labels over the entire input voxels so that it is more efficient and expect to yield better performance with larger input size. Furthermore, instead of picking the best network structure, an ensemble of multiple models, trained on different dataset or different hyper-parameters, can generally improve the segmentation performance. In this study we propose to use an ensemble of 3D U-Nets with different hyper-parameters for brain tumor segmentation. Preliminary results showed effectiveness of this model. In addition, we developed a linear model for survival prediction using extracted imaging and non-imaging features, which, despite the simplicity, can effectively reduce overfitting and regression errors.},
+	Address = {Cham},
+	Author = {Feng, Xue and Tustison, Nicholas and Meyer, Craig},
+	Booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+	Date-Added = {2020-08-05 08:51:31 +0200},
+	Date-Modified = {2020-08-05 09:00:41 +0200},
+	Editor = {Crimi, Alessandro and Bakas, Spyridon and Kuijf, Hugo and Keyvan, Farahani and Reyes, Mauricio and van Walsum, Theo},
+	Isbn = {978-3-030-11726-9},
+	Pages = {279--288},
+	Publisher = {Springer International Publishing},
+	Title = {Brain Tumor Segmentation Using an Ensemble of 3D U-Nets and Overall Survival Prediction Using Radiomic Features},
+	Year = {2019}}
+
+@inproceedings{marcinkiewicz2018segmenting,
+	Author = {Marcinkiewicz, Michal and Nalepa, Jakub and Lorenzo, Pablo Ribalta and Dudzik, Wojciech and Mrukwa, Grzegorz},
+	Booktitle = {International MICCAI Brainlesion Workshop},
+	Date-Added = {2020-08-05 08:39:37 +0200},
+	Date-Modified = {2020-08-05 08:39:37 +0200},
+	Organization = {Springer},
+	Pages = {13--24},
+	Title = {Segmenting brain tumors from MRI using cascaded multi-modal U-Nets},
+	Year = {2018}}
