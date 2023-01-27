@@ -7,7 +7,6 @@ on:
     
 jobs:
    publish:
-    needs: test
     name: Publish to test PyPI
     runs-on: ubuntu-latest
     steps:
