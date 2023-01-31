@@ -75,20 +75,20 @@ class Segmentor(object):
             logging.exception("Unexpected Error!")
             raise
 
-    def getFileFormat(self, index):
+    def _getFileFormat(self, index):
         return self.config[index]["fileformat"]
 
-    def getContainerName(self, index):
+    def _getContainerName(self, index):
         return self.config[index]["name"]
 
-    def getNumberOfContainers(self):
+    def _getNumberOfContainers(self):
         return len(self.config)
 
     def runDummyContainer(self, stop=False):
         command = "docker run --rm -it hello-world"
         subprocess.check_call(command, shell=True)
 
-    def runContainer(self, id, directory, outputDir, outputName):
+    def _runContainer(self, id, directory, outputDir, outputName):
         """
         Runs one container on one patient folder
         """
@@ -158,7 +158,7 @@ class Segmentor(object):
         # fileh.close()
         return True
 
-    def runIterate(self, dir, cid):
+    def _runIterate(self, dir, cid):
         """Iterates over a directory and runs the segmentation on each patient found"""
         logging.info("Looking for BRATS data directories..")
         for fn in os.listdir(dir):
@@ -172,7 +172,7 @@ class Segmentor(object):
                     if err.errno != errno.EEXIST:
                         raise
                 logging.info("Calling Container: {}".format(cid))
-                if not self.runContainer(cid, os.path.join(dir, fn), dir):
+                if not self._runContainer(cid, os.path.join(dir, fn), dir):
                     logging.info(
                         "ERROR: Run failed for patient {} with container {}".format(
                             fn, cid
@@ -183,7 +183,7 @@ class Segmentor(object):
                 # rename_folder(img_id, os.path.join(directory, fn), fn)
         return True
 
-    def multiSegment(self, tempDir, inputs, method, outputName, outputDir):
+    def _multiSegment(self, tempDir, inputs, method, outputName, outputDir):
         """
         multiSegment [summary]
 
@@ -199,7 +199,7 @@ class Segmentor(object):
         for cid in self.config.keys():
             # replace this with a call to single-segment
             logging.info("[Orchestra] Segmenting with " + cid)
-            ff = self._format(self.getFileFormat(cid), self.fileformats)
+            ff = self._format(self._getFileFormat(cid), self.fileformats)
             for key, img in inputs.items():
                 savepath = op.join(tempDir, ff[key])
                 img = oitk.get_itk_image(img)
@@ -216,8 +216,8 @@ class Segmentor(object):
                     )
                 )
 
-            status = self.runContainer(cid, tempDir, outputDir)
-            status = self.runContainer(cid, tempDir, outputDir, outputName)
+            status = self._runContainer(cid, tempDir, outputDir)
+            status = self._runContainer(cid, tempDir, outputDir, outputName)
             if status:
                 if self.verbose:
                     logging.info("[Weborchestra][Success] Segmentation saved")
@@ -230,7 +230,7 @@ class Segmentor(object):
             outputDir, method=method, outputPath=op.join(outputDir, outputName)
         )
 
-    def singleSegment(self, tempDir, inputs, cid, outputName, outputDir):
+    def _singleSegment(self, tempDir, inputs, cid, outputName, outputDir):
         """
         singleSegment [summary]
 
@@ -241,7 +241,7 @@ class Segmentor(object):
             outputName ([type]): [description]
             outputDir ([type]): [description]
         """
-        ff = self._format(self.getFileFormat(cid), self.fileformats)
+        ff = self._format(self._getFileFormat(cid), self.fileformats)
         for key, img in inputs.items():
             savepath = op.join(tempDir, ff[key])
             img = oitk.get_itk_image(img)
@@ -253,7 +253,7 @@ class Segmentor(object):
             logging.info(
                 "[Weborchestra][Info] Starting the Segmentation with {} now".format(cid)
             )
-        status = self.runContainer(cid, tempDir, outputDir, outputName)
+        status = self._runContainer(cid, tempDir, outputDir, outputName)
         if status:
             if self.verbose:
                 logging.info("[Weborchestra][Success] Segmentation saved")
@@ -310,11 +310,11 @@ class Segmentor(object):
         if cid == "mav" or cid == "simple" or cid == "all":
             # segment with all containers
             logging.info("Called singleSegment with method: " + cid)
-            self.multiSegment(tempDir, inputs, cid, outputName, outputDir)
+            self._multiSegment(tempDir, inputs, cid, outputName, outputDir)
         else:
             # segment only with a single container
             logging.info("Called singleSegment with docker: " + cid)
-            self.singleSegment(tempDir, inputs, cid, outputName, outputDir)
+            self._singleSegment(tempDir, inputs, cid, outputName, outputDir)
 
     ### Private utility methods below ###
 
