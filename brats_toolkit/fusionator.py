@@ -19,7 +19,7 @@ class Fusionator(object):
     def __init__(self, verbose=True):
         self.verbose = verbose
 
-    def binaryMav(self, candidates, weights=None):
+    def _binaryMav(self, candidates, weights=None):
         """
         binaryMav performs majority vote fusion on an arbitary number of input segmentations with
         only two classes each (1 and 0).
@@ -75,7 +75,7 @@ class Fusionator(object):
             )
         return result
 
-    def mav(self, candidates, labels=None, weights=None):
+    def _mav(self, candidates, labels=None, weights=None):
         """
         mav performs majority vote fusion on an arbitary number of input segmentations with
         an arbitrary number of labels.
@@ -142,7 +142,7 @@ class Fusionator(object):
             )
         return result
 
-    def brats_simple(
+    def _brats_simple(
         self,
         candidates,
         weights=None,
@@ -206,7 +206,7 @@ class Fusionator(object):
             if self.verbose:
                 print(bin_candidates[0].shape)
             # baseline estimate
-            estimate = self.binaryMav(bin_candidates, weights)
+            estimate = self._binaryMav(bin_candidates, weights)
             # initial convergence baseline
             conv = np.sum(estimate)
             # check if the estimate was reasonable
@@ -230,7 +230,7 @@ class Fusionator(object):
                     c for c, w in zip(bin_candidates, weights) if (w > t * max_phi)
                 ]
                 # calculate new estimate
-                estimate = self.binaryMav(bin_candidates, weights)
+                estimate = self._binaryMav(bin_candidates, weights)
                 # increment tau
                 tau = tau + inc
                 # check if it converges
@@ -258,7 +258,7 @@ class Fusionator(object):
             )
         return result
 
-    def simple(
+    def _simple(
         self,
         candidates,
         weights=None,
@@ -331,7 +331,7 @@ class Fusionator(object):
             if self.verbose:
                 print(bin_candidates[0].shape)
             # baseline estimate
-            estimate = self.binaryMav(bin_candidates, weights)
+            estimate = self._binaryMav(bin_candidates, weights)
             # initial convergence baseline
             conv = np.sum(estimate)
             # check if the estimate was reasonable
@@ -355,7 +355,7 @@ class Fusionator(object):
                     c for c, w in zip(bin_candidates, weights) if (w > t * max_phi)
                 ]
                 # calculate new estimate
-                estimate = self.binaryMav(bin_candidates, weights)
+                estimate = self._binaryMav(bin_candidates, weights)
                 # increment tau
                 tau = tau + inc
                 # check if it converges
@@ -383,7 +383,7 @@ class Fusionator(object):
             )
         return result
 
-    def dirFuse(self, directory, method="mav", outputPath=None, labels=None):
+    def _dirFuse(self, directory, method="mav", outputPath=None, labels=None):
         """
         dirFuse [summary]
 
@@ -420,21 +420,21 @@ class Fusionator(object):
                     directory
                 )
             )
-            result = self.mav(candidates, labels, weights)
+            result = self._mav(candidates, labels, weights)
         elif method == "simple":
             print(
                 "Orchestra: Now fusing all .nii.gz files in directory {} using SIMPLE. For more output, set the -v or --verbose flag or instantiate the fusionator class with verbose=true".format(
                     directory
                 )
             )
-            result = self.simple(candidates, weights)
+            result = self._simple(candidates, weights)
         elif method == "brats-simple":
             print(
                 "Orchestra: Now fusing all .nii.gz files in directory {} using BRATS-SIMPLE. For more output, set the -v or --verbose flag or instantiate the fusionator class with verbose=true".format(
                     directory
                 )
             )
-            result = self.brats_simple(candidates, weights)
+            result = self._brats_simple(candidates, weights)
         try:
             if outputPath == None:
                 oitk.write_itk_image(
@@ -500,17 +500,17 @@ class Fusionator(object):
             print(
                 "Orchestra: Now fusing all passed .nii.gz files using MAJORITY VOTING. For more output, set the -v or --verbose flag or instantiate the fusionator class with verbose=true"
             )
-            result = self.mav(candidates, labels=labels, weights=w_weights)
+            result = self._mav(candidates, labels=labels, weights=w_weights)
         elif method == "simple":
             print(
                 "Orchestra: Now fusing all passed .nii.gz files in using SIMPLE. For more output, set the -v or --verbose flag or instantiate the fusionator class with verbose=true"
             )
-            result = self.simple(candidates, w_weights)
+            result = self._simple(candidates, w_weights)
         elif method == "brats-simple":
             print(
                 "Orchestra: Now fusing all .nii.gz files in directory {} using BRATS-SIMPLE. For more output, set the -v or --verbose flag or instantiate the fusionator class with verbose=true"
             )
-            result = self.brats_simple(candidates, w_weights)
+            result = self._brats_simple(candidates, w_weights)
         try:
             outputDir = op.dirname(outputPath)
             os.makedirs(outputDir, exist_ok=True)
