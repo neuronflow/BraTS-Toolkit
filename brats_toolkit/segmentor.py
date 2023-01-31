@@ -84,7 +84,7 @@ class Segmentor(object):
     def _getNumberOfContainers(self):
         return len(self.config)
 
-    def runDummyContainer(self, stop=False):
+    def _runDummyContainer(self, stop=False):
         command = "docker run --rm -it hello-world"
         subprocess.check_call(command, shell=True)
 
