@@ -76,7 +76,7 @@ Activates Robex brain extraction.
 #### GPU defacing: "gpu_defacing"
 Activates GPU defacing - not implemented yet falls back to `cpu_defacing` for the moment. 
 #### CPU defacing: "cpu_defacing"
-Activates mri-deface to deface using CPU. Use this mode for further processing on the Kraken (https://neuronflow.github.io/kraken/)
+Activates mri-deface to deface using CPU.
 
 ### Single vs. batch processing
  BraTS preprocessor offers processing files in `batch` or `single` mode. Please have a look at the respective example scripts / CLI commands for information how to use them.
