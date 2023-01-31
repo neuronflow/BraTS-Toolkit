@@ -26,8 +26,10 @@ class Preprocessor(object):
         def connect():
             print("connection established! sid:", self.sio.sid)
             # client identification
-            self.sio.emit("clientidentification", {
-                "brats_cli": self.clientVersion, "proc_mode": self.mode})
+            self.sio.emit(
+                "clientidentification",
+                {"brats_cli": self.clientVersion, "proc_mode": self.mode},
+            )
 
         @self.sio.event
         def connect_error():
@@ -35,53 +37,69 @@ class Preprocessor(object):
 
         @self.sio.event
         def disconnect():
-            print('disconnected from server')
+            print("disconnected from server")
 
-        @self.sio.on('message')
+        @self.sio.on("message")
         def message(data):
-            print('message', data)
+            print("message", data)
 
-        @self.sio.on('status')
+        @self.sio.on("status")
         def on_status(data):
-            print('status reveived: ', data)
-            if data['message'] == "client ID json generation finished!":
-                self.inspect_input()
-            elif data['message'] == "input inspection finished!":
+            print("status reveived: ", data)
+            if data["message"] == "client ID json generation finished!":
+                self._inspect_input()
+            elif data["message"] == "input inspection finished!":
                 if "data" in data:
-                    print("input inspection found the following exams: ",
-                          data['data'])
+                    print("input inspection found the following exams: ", data["data"])
                     if self.confirmationRequired:
                         confirmation = input(
-                            "press \"y\" to continue or \"n\" to scan the input folder again.").lower()
+                            'press "y" to continue or "n" to scan the input folder again.'
+                        ).lower()
                     else:
                         confirmation = "y"
 
                     if confirmation == "n":
-                        self.inspect_input()
+                        self._inspect_input()
 
                     if confirmation == "y":
-                        self.process_start()
+                        self._process_start()
 
-            elif data['message'] == "image processing successfully completed.":
+            elif data["message"] == "image processing successfully completed.":
                 self.sio.disconnect()
                 stop_docker()
                 sys.exit(0)
 
-        @self.sio.on('client_outdated')
+        @self.sio.on("client_outdated")
         def outdated(data):
-            print("Your client version", self.clientVersion, "is outdated. Please download version", data,
-                  "from:")
+            print(
+                "Your client version",
+                self.clientVersion,
+                "is outdated. Please download version",
+                data,
+                "from:",
+            )
             print("https://neuronflow.github.io/brats-preprocessor/")
             self.sio.disconnect()
             stop_docker()
             sys.exit(0)
 
-        @self.sio.on('ipstatus')
+        @self.sio.on("ipstatus")
         def on_ipstatus(data):
             print("image processing status reveived:")
-            print(data['examid'], ": ", data['ipstatus'])
+            print(data["examid"], ": ", data["ipstatus"])
 
-    def single_preprocess(self, t1File, t1cFile, t2File, flaFile, outputFolder, mode, confirm=False, skipUpdate=False, gpuid='0'):
+    def single_preprocess(
+        self,
+        t1File,
+        t1cFile,
+        t2File,
+        flaFile,
+        outputFolder,
+        mode,
+        confirm=False,
+        skipUpdate=False,
+        gpuid="0",
+    ):
         # assign name to file
         print("basename:", os.path.basename(outputFolder))
         outputPath = Path(outputFolder)
@@ -103,12 +121,26 @@ class Preprocessor(object):
         tempFiler(t2File, "t2", tempFolder)
         tempFiler(flaFile, "fla", tempFolder)
 
-        self.batch_preprocess(exam_import_folder=dockerFolder, exam_export_folder=dockerOutputFolder, mode=mode,
-                              confirm=confirm, skipUpdate=skipUpdate, gpuid=gpuid)
+        self.batch_preprocess(
+            exam_import_folder=dockerFolder,
+            exam_export_folder=dockerOutputFolder,
+            mode=mode,
+            confirm=confirm,
+            skipUpdate=skipUpdate,
+            gpuid=gpuid,
+        )
 
-    def batch_preprocess(self, exam_import_folder=None, exam_export_folder=None, dicom_import_folder=None,
-                         nifti_export_folder=None,
-                         mode="cpu", confirm=True, skipUpdate=False, gpuid='0'):
+    def batch_preprocess(
+        self,
+        exam_import_folder=None,
+        exam_export_folder=None,
+        dicom_import_folder=None,
+        nifti_export_folder=None,
+        mode="cpu",
+        confirm=True,
+        skipUpdate=False,
+        gpuid="0",
+    ):
         if confirm != True:
             self.confirmationRequired = False
         self.mode = mode
@@ -118,23 +150,29 @@ class Preprocessor(object):
             stop_docker()
             if skipUpdate != True:
                 update_docker()
-            start_docker(exam_import_folder=exam_import_folder, exam_export_folder=exam_export_folder,
-                         dicom_import_folder=dicom_import_folder, nifti_export_folder=nifti_export_folder, mode=self.mode, gpuid=self.gpuid)
+            start_docker(
+                exam_import_folder=exam_import_folder,
+                exam_export_folder=exam_export_folder,
+                dicom_import_folder=dicom_import_folder,
+                nifti_export_folder=nifti_export_folder,
+                mode=self.mode,
+                gpuid=self.gpuid,
+            )
 
         # setup connection
         # TODO do this in a more elegant way and somehow check whether docker is up and running before connect
         self.sio.sleep(5)  # wait 5 secs for docker to start
-        self.connect_client()
+        self._connect_client()
         self.sio.wait()
 
-    def connect_client(self):
-        self.sio.connect('http://localhost:5000')
-        print('sid:', self.sio.sid)
+    def _connect_client(self):
+        self.sio.connect("http://localhost:5000")
+        print("sid:", self.sio.sid)
 
-    def inspect_input(self):
+    def _inspect_input(self):
         print("sending input inspection request!")
-        self.sio.emit("input_inspection", {'hurray': 'yes'})
+        self.sio.emit("input_inspection", {"hurray": "yes"})
 
-    def process_start(self):
+    def _process_start(self):
         print("sending processing request!")
-        self.sio.emit("brats_processing", {'hurray': 'yes'})
+        self.sio.emit("brats_processing", {"hurray": "yes"})
