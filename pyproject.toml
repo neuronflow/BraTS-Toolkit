@@ -25,7 +25,7 @@ maintainers = [
   {name="Isra Mekki", email="isra.mekki@helmholtz-muenchen.de"},
   {name="Mahyar Valizadeh", email="mahyar.valizadeh@helmholtz-muenchen.de"},
 ]
-description = "BraTS Toolkit is a holistic approach to brain tumor segmentation and consists of three components: First, the BraTS Preprocessor facilitates data standardization and preprocessing for researchers and clinicians alike. It covers the entire image analysis workflow prior to tumor segmentation, from image conversion and registration to brain extraction. Second, BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations. Finally, Brats Fusionator can combine the resulting candidate segmentations into consensus segmentations using fusion methods such as majority voting and iterative SIMPLE fusion."
+description = "BraTS Toolkit is a holistic approach to brain tumor segmentation allowing to build modular pipeliens for preprocessing, segmentation and fusion of segmentations."
 keywords = ["brain tumor", "glioma", "BraTS", "segmentation", "fusion", "skullstripping", "brain extraction"]
 readme = "README.md"
 # requires-python = "==3.10"
