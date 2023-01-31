@@ -1,0 +1,58 @@
+{
+    "scan_lite-20":{
+        "name":"scan2020_lite",
+        "author":"Richard McKinley",
+        "email": "richard.mckinley@gmail.com",
+        "citation": "TODO",
+        "fileformat":"gz-b18",
+        "runtime":"nvidia",
+        "id":"brats/scan-20",
+        "command":"python3 DeepSCAN_BRATS_2020.py -l",
+        "mountpoint":"/app/data/",
+        "user_mode": "True",
+        "root_issue": "False",
+        "flags": ""
+    },
+    "scan-20":{
+        "name":"scan2020",
+        "author":"Richard McKinley",
+        "email": "richard.mckinley@gmail.com",
+        "citation": "TODO",
+        "fileformat":"gz-b18",
+        "runtime":"nvidia",
+        "id":"brats/scan-20",
+        "command":"python3 DeepSCAN_BRATS_2020.py",
+        "mountpoint":"/app/data/",
+        "user_mode": "True",
+        "root_issue": "False",
+        "flags": ""
+    },
+    "redneucon-20":{
+        "name":"redneucon-20",
+        "author":"Proyecto Fundacion HM",
+        "email": "psegmentacnn@gmail.com",
+        "citation": "TODO",
+        "fileformat":"gz-b18",
+        "runtime":"nvidia",
+        "id":"brats/redneucon-20",
+        "command":"sh /Task2/predict/for_redistribution_files_only/run_predict.sh /opt/mcr/v98/",
+        "mountpoint":"/app/data/",
+        "user_mode": "True",
+        "root_issue": "False",
+        "flags": ""
+    },
+    "brats_midl-20":{
+        "name":"brats_midl-20",
+        "author":"Muhammad Junaid Ali",
+        "email": "junaid199f@gmail.com",
+        "citation": "TODO",
+        "fileformat":"gz-b18",
+        "runtime":"nvidia",
+        "id":"brats/brats_midl-20",
+        "command":"",
+        "mountpoint":"/app/data/",
+        "user_mode": "True",
+        "root_issue": "False",
+        "flags": ""
+    }
+}

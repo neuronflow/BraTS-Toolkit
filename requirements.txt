@@ -1,1 +1,0 @@
--e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit

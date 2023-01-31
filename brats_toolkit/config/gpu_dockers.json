@@ -1,0 +1,47 @@
+{
+    "mic-dkfz":{
+        "name":"mic-dkfz",
+        "author":"Fabian Isensee",
+        "fileformat":"gz-b17-f",
+        "runtime":"nvidia",
+        "id":"fabianisensee/isen2018",
+        "command":"python3.6 predict_patient.py",
+        "mountpoint":"/data"
+    },
+    "scan":{
+        "name":"scan",
+        "author":"Richard McKinley",
+        "fileformat":"b17-t1",
+        "runtime":"nvidia",
+        "id":"mckinleyscan/brats:v2",
+        "command":"python DeepSCAN_BRATS.py",
+        "mountpoint":"/data"
+    },
+    "xfeng":{
+        "name":"xfeng",
+        "author":"Xue Feng",
+        "fileformat":"gz-b17-f",
+        "runtime":"nvidia",
+        "id":"xf4j/brats18",
+        "command":"python /brats18/docker_run_survival.py",
+        "mountpoint":"/data"
+    },
+    "zyx_2019":{
+        "name":"zyx_2019",
+        "author":"yuanxing.zhao@nlpr.ia.ac.cn",
+        "fileformat":"gz-b18",
+        "runtime":"nvidia",
+        "id":"jiaocha/zyxbrats",
+        "command":" ",
+        "mountpoint":"/data"
+    },
+    "scan_2019":{
+        "name":"scan_2019",
+        "author":"Richard McKinley - richard.mckinley@gmail.com",
+        "fileformat":"gz-b18",
+        "runtime":"nvidia",
+        "id":"scan/brats2019",
+        "command":"python DeepSCAN_BRATS_2019.py",
+        "mountpoint":"/data"
+    }
+}

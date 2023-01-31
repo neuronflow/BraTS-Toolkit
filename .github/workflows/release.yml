@@ -1,0 +1,30 @@
+name: release
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+    
+jobs:
+   publish:
+    name: Publish to test PyPI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository 
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install build
+          pip install twine
+      - name: Build package
+        run: python -m build
+      - name: Upload to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: | 
+          twine upload dist/*.whl
