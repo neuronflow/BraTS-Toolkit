@@ -12,7 +12,7 @@ Abstract:
 ## Installation
 To install the most up to date version from the master branch please use the following pip install command:
 ```
-pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit
+pip install BraTS-Toolkit
 ```
 
 We recommended installation in a virtual environment based on Python 3.10 .
@@ -83,11 +83,8 @@ Activates mri-deface to deface using CPU. Use this mode for further processing o
  
  For faster computation we strictly recommend the `batch` processing mode, which avoids additional overhead of spawning and shutting down multiple docker containers and instead does all the processing in one container.  
 
-### Graphical User Interface (GUI)
-You can find instructions to use and download the GUI variant here: https://neuronflow.github.io/BraTS-Preprocessor/
-
 ### Python package
-Please have a look at `0_preprocessing_batch.py` and `0_preprocessing_single.py` in this repository for a demo application.
+Please have a look at `0_preprocessing_batch.py` and `0_preprocessing_single.py` in this repository for a demo application. You can download the example data by cloning this repository.
 
 ### Command Line Interface (CLI)
 #### single file processing
@@ -95,6 +92,9 @@ Type `brats-preprocess -h` after installing the python package to see available 
 #### batch file processing
 Type `brats-batch-preprocess -h` after installing the python package to see available options.
 
+### Graphical User Interface (GUI)
+You can find instructions to use and download the GUI variant here: https://neuronflow.github.io/BraTS-Preprocessor/
+> WARNING: The GUI is not nicely maintained. We encourage you to use the python package or the CLI instead.
 
 ## Brats Segmentor
 BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations.
@@ -112,14 +112,5 @@ Please have a look at `2_fusion.py` in this repository for a demo application.
 ### Command Line Interface (CLI)
 Type `brats-fuse -h` after installing the python package to see available options.
 
-## Source code
-The source code for BraTS Toolkit can be found here: https://github.com/neuronflow/BraTS-Toolkit-Source
-
 ## Contact / Feedback / Questions
 Open an issue in this git repository or contact us per email.
-
-Florian Kofler
-florian.kofler [at] tum.de
-
-Christoph Berger
-c.berger [at] tum.de
