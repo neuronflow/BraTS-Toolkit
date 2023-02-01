@@ -12,5 +12,12 @@ outputDir = "example_data/output_preprocessor_batch"
 
 
 # execute it
-prep.batch_preprocess(exam_import_folder=inputDir,
-                      exam_export_folder=outputDir, mode="gpu", confirm=True, skipUpdate=False, gpuid='0')
+prep.batch_preprocess(
+    exam_import_folder=inputDir,
+    exam_export_folder=outputDir,
+    # this way the brain extraction will run on gpu
+    mode="gpu",
+    confirm=True,
+    skipUpdate=False,
+    gpuid="0",
+)
