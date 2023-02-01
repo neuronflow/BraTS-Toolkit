@@ -3,3 +3,5 @@ venv
 .vscode
 __pycache__
 docs/_build
+BraTS_Toolkit.egg-info
+brats_toolkit/_version.py
