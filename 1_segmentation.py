@@ -21,14 +21,20 @@ flaFile = "example_data/output_preprocessor_single/TCGA-DU-7294/hdbet_brats-spac
 outputFolder = "example_data/output_segmentor/TCGA-DU-7294/"
 
 # algorithms we want to select for segmentation
-cids = ['mic-dkfz', 'scan', 'xfeng', 'lfb_rwth', 'zyx_2019', 'scan_2019']
+cids = ["mic-dkfz", "scan", "xfeng", "lfb_rwth", "zyx_2019", "scan_2019"]
 
 # execute it
 for cid in cids:
     try:
         outputFile = outputFolder + cid + ".nii.gz"
-        seg.segment(t1=t1File, t2=t2File, t1c=t1cFile,
-                    fla=flaFile, cid=cid, outputPath=outputFile)
+        seg.segment(
+            t1=t1File,
+            t2=t2File,
+            t1c=t1cFile,
+            fla=flaFile,
+            cid=cid,
+            outputPath=outputFile,
+        )
 
     except Exception as e:
         print("error:", str(e))
