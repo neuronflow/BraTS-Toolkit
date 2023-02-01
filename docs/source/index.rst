@@ -6,6 +6,8 @@
 Welcome to BraTS-Toolkit's documentation!
 =========================================
 
+.. include:: ../../README.md
+
 .. toctree::
    :maxdepth: 4
    :caption: Contents:
