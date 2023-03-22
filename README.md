@@ -59,7 +59,7 @@ Please also cite the following original authors of the algorithms who make this 
 | isen-20 | upcoming publication          |
 | hnfnetv1-20 | upcoming publication          |
 | yixinmpl-20 |  Wang, Y., Zhang, Y., Hou, F., Liu, Y., Tian, J., Zhong, C., ... & He, Z. (2021). Modality-pairing learning for brain tumor segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020,(pp. 230-240). Springer International Publishing.         |
-| sanet0-20 | upcoming publication          |
+| sanet0-20 | Yuan, Y. (2021). Automatic brain tumor segmentation with scale attention network. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries BrainLes 2020, (pp. 285-294). Springer International Publishing.          |
 | scan-20 | upcoming publication          |
 | scan_lite-20 | upcoming publication          |
 
