@@ -56,11 +56,11 @@ Please also cite the following original authors of the algorithms who make this 
 | gbmnet    | Nuechterlein, N., & Mehta, S. (2019). 3D-ESPNet with Pyramidal Refinement for Volumetric Brain Tumor Image Segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (pp. 245–253). Springer International Publishing.                                     |
 | xyz_2019  | Zhao, Y.X., Zhang, Y.M., Song, M., & Liu, C.L. (2019). Multi-view Semi-supervised 3D Whole Brain Segmentation with a Self-ensemble Network. In Medical Image Computing and Computer Assisted Intervention – MICCAI 2019 (pp. 256–265). Springer International Publishing.                      |
 | scan_2019 | McKinley, R., Rebsamen, M., Meier, R., & Wiest, R. (2020). Triplanar Ensemble of 3D-to-2D CNNs with Label-Uncertainty for Brain Tumor Segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (pp. 379–387). Springer International Publishing.          |
-| isen-20 | upcoming publication          |
-| hnfnetv1-20 | upcoming publication          |
-| yixinmpl-20 | upcoming publication          |
-| sanet0-20 | upcoming publication          |
-| scan-20 | upcoming publication          |
+| isen-20 | Isensee, F., Jäger, P. F., Full, P. M., Vollmuth, P., & Maier-Hein, K. H. (2021). nnU-Net for brain tumor segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, (pp. 118-132). Springer International Publishing.          |
+| hnfnetv1-20 | Jia, H., Cai, W., Huang, H., & Xia, Y. (2021). H^ 2 2 NF-Net for Brain Tumor Segmentation Using Multimodal MR Imaging: 2nd Place Solution to BraTS Challenge 2020 Segmentation Task. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, (pp. 58-68). Springer International Publishing.          |
+| yixinmpl-20 |  Wang, Y., Zhang, Y., Hou, F., Liu, Y., Tian, J., Zhong, C., ... & He, Z. (2021). Modality-pairing learning for brain tumor segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020,(pp. 230-240). Springer International Publishing.         |
+| sanet0-20 | Yuan, Y. (2021). Automatic brain tumor segmentation with scale attention network. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries BrainLes 2020, (pp. 285-294). Springer International Publishing.          |
+| scan-20 | McKinley, R., Rebsamen, M., Dätwyler, K., Meier, R., Radojewski, P., & Wiest, R. (2021). Uncertainty-driven refinement of tumor-core segmentation using 3d-to-2d networks with label uncertainty. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, (pp. 401-411). Springer International Publishing.          |
 | scan_lite-20 | upcoming publication          |
 
 
