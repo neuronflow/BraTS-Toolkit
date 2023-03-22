@@ -58,7 +58,7 @@ Please also cite the following original authors of the algorithms who make this 
 | scan_2019 | McKinley, R., Rebsamen, M., Meier, R., & Wiest, R. (2020). Triplanar Ensemble of 3D-to-2D CNNs with Label-Uncertainty for Brain Tumor Segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (pp. 379–387). Springer International Publishing.          |
 | isen-20 | upcoming publication          |
 | hnfnetv1-20 | upcoming publication          |
-| yixinmpl-20 | upcoming publication          |
+| yixinmpl-20 |  Wang, Y., Zhang, Y., Hou, F., Liu, Y., Tian, J., Zhong, C., ... & He, Z. (2021). Modality-pairing learning for brain tumor segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, Held in Conjunction with MICCAI 2020, Lima, Peru, October 4, 2020, Revised Selected Papers, Part I 6 (pp. 230-240). Springer International Publishing.Wang, Y., Zhang, Y., Hou, F., Liu, Y., Tian, J., Zhong, C., ... & He, Z. (2021). Modality-pairing learning for brain tumor segmentation. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, Held in Conjunction with MICCAI 2020, Lima, Peru, October 4, 2020, Revised Selected Papers, Part I 6 (pp. 230-240). Springer International Publishing.         |
 | sanet0-20 | upcoming publication          |
 | scan-20 | upcoming publication          |
 | scan_lite-20 | upcoming publication          |
