@@ -8,4 +8,4 @@ docker exec -d greedy_elephant /bin/bash -c "source ~/.bashrc; Xorg -noreset +ex
 docker exec -d greedy_elephant python3 elephant_server.py
 docker exec -d greedy_elephant /bin/bash -c "source ~/.bashrc; rq-dashboard;"
 docker exec -d greedy_elephant /bin/bash -c "source ~/.bashrc; ./start_workers.sh;"
-del temp.txt
+@REM del temp.txt
