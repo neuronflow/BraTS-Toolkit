@@ -45,7 +45,7 @@ class Preprocessor(object):
 
         @self.sio.on("status")
         def on_status(data):
-            print("status reeived: ", data)
+            print("status received: ", data)
             if data["message"] == "client ID json generation finished!":
                 self._inspect_input()
             elif data["message"] == "input inspection finished!":
@@ -161,7 +161,7 @@ class Preprocessor(object):
 
         # setup connection
         # TODO do this in a more elegant way and somehow check whether docker is up and running before connect
-        self.sio.sleep(8)  # wait 5 secs for docker to start
+        self.sio.sleep(8)  # wait 8 secs for docker to start
         self._connect_client()
         self.sio.wait()
 
