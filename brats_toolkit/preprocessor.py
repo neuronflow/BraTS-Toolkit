@@ -85,7 +85,7 @@ class Preprocessor(object):
 
         @self.sio.on("ipstatus")
         def on_ipstatus(data):
-            print("image processing status reveived:")
+            print("image processing status received:")
             print(data["examid"], ": ", data["ipstatus"])
 
     def single_preprocess(
