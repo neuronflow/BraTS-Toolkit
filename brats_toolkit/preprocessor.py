@@ -5,10 +5,13 @@ import tempfile
 from pathlib import Path
 
 from brats_toolkit.util.prep_utils import tempFiler
+from brats_toolkit.util.citation_reminder import citation_reminder
 import sys
 
 
 class Preprocessor(object):
+
+    @citation_reminder
     def __init__(self, noDocker=False):
         # settings
         self.clientVersion = "0.0.1"

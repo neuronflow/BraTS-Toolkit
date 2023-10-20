@@ -13,9 +13,12 @@ import numpy as np
 import os.path as op
 from .util import own_itk as oitk
 from .util import filemanager as fm
+from .util.citation_reminder import citation_reminder
 
 
 class Fusionator(object):
+
+    @citation_reminder
     def __init__(self, verbose=True):
         self.verbose = verbose
 

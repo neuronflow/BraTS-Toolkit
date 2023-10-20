@@ -39,7 +39,8 @@ dependencies = [
     'numpy==1.22.0',
     'python-engineio==3.14.2',
     'python-socketio==4.6.1',
-    'requests==2.24.0'
+    'requests==2.24.0',
+    'rich==13.6.0'
 ]
 
 [project.optional-dependencies]

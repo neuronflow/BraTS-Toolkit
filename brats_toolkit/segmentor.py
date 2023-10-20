@@ -24,6 +24,7 @@ import numpy as np
 from . import fusionator
 from .util import filemanager as fm
 from .util import own_itk as oitk
+from .util.citation_reminder import citation_reminder
 
 
 class Segmentor(object):
@@ -31,6 +32,7 @@ class Segmentor(object):
     Now does it all!
     """
 
+    @citation_reminder
     def __init__(
         self,
         config=None,

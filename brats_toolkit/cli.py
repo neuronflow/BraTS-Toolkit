@@ -10,7 +10,7 @@ import sys
 import subprocess
 import pprint
 import argparse
-from rich.console import Console
+
 
 from . import segmentor, fusionator, preprocessor
 
@@ -42,20 +42,7 @@ def list_docker_cpu():
         if seg.config[id]["runtime"] == "runc":
             print(id)
 
-def citation_reminder(func):
-
-    def wrapper():
-        console = Console()
-        console.rule("[bold red]Friendly citation reminder[/bold red]")
-        console.print("If you use this software in your research, please [bold cyan]cite[/bold cyan] BraTS Toolkit and the original authors of the algorithms who make this repository and tool possible.", justify="center")
-        console.print("Details can be found at https://github.com/neuronflow/BraTS-Toolkit#citation", justify="center")
-        console.print("Thank you!", justify="center")
-        console.rule()
-        console.line()
-        func()
-    return wrapper
     
-@citation_reminder
 def fusion():
     parser = argparse.ArgumentParser(
         description="Runs the Docker orchestra to fuse segmentations. All inputs have to have equal shape and label values"
@@ -97,7 +84,6 @@ def fusion():
     except Exception as e:
         print("ERROR DETAIL: ", e)
 
-@citation_reminder
 def segmentation():
     parser = argparse.ArgumentParser(
         description="Runs the Docker orchestra to segment and fuse segmentations based on the"
@@ -193,7 +179,6 @@ def segmentation():
     except Exception as e:
         print("ERROR DETAIL: ", e)
 
-@citation_reminder
 def batchpreprocess():
     parser = argparse.ArgumentParser(
         description="Runs the preprocessing for MRI scans on a folder of images."
@@ -257,7 +242,6 @@ def batchpreprocess():
     except Exception as e:
         print("ERROR DETAIL: ", e)
 
-@citation_reminder
 def singlepreprocess():
     parser = argparse.ArgumentParser(
         description="Runs the preprocessing for MRI scans on a single set of images."
