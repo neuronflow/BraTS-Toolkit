@@ -5,10 +5,13 @@ import tempfile
 from pathlib import Path
 
 from brats_toolkit.util.prep_utils import tempFiler
+from brats_toolkit.util.citation_reminder import citation_reminder
 import sys
 
 
 class Preprocessor(object):
+
+    @citation_reminder
     def __init__(self, noDocker=False):
         # settings
         self.clientVersion = "0.0.1"
@@ -45,7 +48,7 @@ class Preprocessor(object):
 
         @self.sio.on("status")
         def on_status(data):
-            print("status reveived: ", data)
+            print("status received: ", data)
             if data["message"] == "client ID json generation finished!":
                 self._inspect_input()
             elif data["message"] == "input inspection finished!":
@@ -85,7 +88,7 @@ class Preprocessor(object):
 
         @self.sio.on("ipstatus")
         def on_ipstatus(data):
-            print("image processing status reveived:")
+            print("image processing status received:")
             print(data["examid"], ": ", data["ipstatus"])
 
     def single_preprocess(
@@ -161,7 +164,7 @@ class Preprocessor(object):
 
         # setup connection
         # TODO do this in a more elegant way and somehow check whether docker is up and running before connect
-        self.sio.sleep(5)  # wait 5 secs for docker to start
+        self.sio.sleep(8)  # wait 8 secs for docker to start
         self._connect_client()
         self.sio.wait()
 
