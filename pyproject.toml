@@ -1,59 +1,55 @@
-[build-system]
-requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
-
-[tool.setuptools]
-packages = ["brats_toolkit"]
-
-[tool.setuptools.dynamic]
-#version = {attr = "my_package.VERSION"}
-readme = {file = "README.md"}
-
-[tool.setuptools_scm]
-write_to = "brats_toolkit/_version.py"
-
-[project]
+[tool.poetry]
 name = "BraTS-Toolkit"
-dynamic = ["version"]
-authors = [
-  {name="Florian Kofler", email="florian.kofler@tum.de"},
-  {name="Christoph Berger", email="c.berger@tum.de"},
-  {name="Isra Mekki", email="isra.mekki@helmholtz-muenchen.de"},
-  {name="Mahyar Valizadeh", email="mahyar.valizadeh@helmholtz-muenchen.de"},
-]
-maintainers = [
-  {name="Florian Kofler", email="florian.kofler@tum.de"},
-  {name="Isra Mekki", email="isra.mekki@helmholtz-muenchen.de"},
-  {name="Mahyar Valizadeh", email="mahyar.valizadeh@helmholtz-muenchen.de"},
-]
+version = "1.0.7" # TODO: make version dynamic?
 description = "BraTS Toolkit is a holistic approach to brain tumor segmentation allowing to build modular pipeliens for preprocessing, segmentation and fusion of segmentations."
-keywords = ["brain tumor", "glioma", "BraTS", "segmentation", "fusion", "skullstripping", "brain extraction"]
+license = "AGPL-3.0"
+
+authors = [
+  "Florian Kofler <florian.kofler@tum.de>",
+  "Christoph Berger <c.berger@tum.de>",
+  "Isra Mekki <isra.mekki@helmholtz-muenchen.de>",
+  "Mahyar Valizadeh <mahyar.valizadeh@helmholtz-muenchen.de>",
+  "Marcel Rosier <marcel.rosier@tum.de>",
+]
+
+maintainers = [
+  "Florian Kofler <florian.kofler@tum.de>",
+  "Isra Mekki <isra.mekki@helmholtz-muenchen.de>",
+  "Mahyar Valizadeh <mahyar.valizadeh@helmholtz-muenchen.de>",
+  "Marcel Rosier <marcel.rosier@tum.de>",
+]
+
 readme = "README.md"
-# requires-python = "==3.10"
+repository = "https://github.com/neuronflow/BraTS-Toolkit"
+documentation = "https://brats-toolkit.readthedocs.io/en/latest/"
+
+keywords = ["brain tumor", "glioma", "BraTS", "segmentation", "fusion", "skullstripping", "brain extraction"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU Affero General Public License v3",
     "Operating System :: OS Independent",
 ]
-dependencies = [
-    'SimpleITK==2.1.1.2',
-    'numpy==1.22.0',
-    'python-engineio==3.14.2',
-    'python-socketio==4.6.1',
-    'requests==2.24.0',
-    'rich==13.6.0'
-]
 
-[project.optional-dependencies]
-dev = [
-  "pytest",
-]
+[tool.poetry.dependencies]
+python = "^3.10"
 
-[project.scripts]
-brats-segment = "brats_toolkit.cli:segmentation"
-brats-fuse = "brats_toolkit.cli:fusion"
-brats-batch-preprocess = "brats_toolkit.cli:batchpreprocess"
-brats-preprocess = "brats_toolkit.cli:singlepreprocess"
+# core
+SimpleITK = "2.1.1.2"
+numpy = "^1.23.0"
+python-engineio = "3.14.2"
+python-socketio = "4.6.1"
+requests = "^2.24.0"
 
-[project.urls]
-# documentation = "TODO"
-repository = "https://github.com/neuronflow/BraTS-Toolkit"
+# pretty citation reminder
+rich = "^13.6.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.poetry.scripts]
+brats-segment = 'brats_toolkit.cli:segmentation'
+brats-fuse = 'brats_toolkit.cli:fusion'
+brats-batch-preprocess = 'brats_toolkit.cli:batchpreprocess'
+brats-preprocess = 'brats_toolkit.cli:singlepreprocess'
+
