@@ -1,6 +1,13 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
 [tool.poetry]
 name = "BraTS-Toolkit"
-version = "1.0.7" # TODO: make version dynamic?
+version = "0.0.0" # will be overwritten by poetry-dynamic-versioning but needs to be set
 description = "BraTS Toolkit is a holistic approach to brain tumor segmentation allowing to build modular pipeliens for preprocessing, segmentation and fusion of segmentations."
 license = "AGPL-3.0"
 
