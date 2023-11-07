@@ -33,10 +33,13 @@ def start_docker(exam_import_folder=None,
     os.makedirs(exam_export_folder, exist_ok=True)
 
     # start the right docker
+    cwd = pathlib.Path(__file__).resolve().parent
+    print(f"{cwd=}")
+
     operatingSystem = platform.system()
     if operatingSystem == "Windows":
-        bashscript = os.path.normpath(
-            './backend_scripts/win_docker.cmd')
+        bashscript = os.path.join(cwd, os.path.normpath(
+            './backend_scripts/win_docker.cmd'))
     else:
         if mode == "cpu":
             bashscript = os.path.normpath(
@@ -56,8 +59,6 @@ def start_docker(exam_import_folder=None,
                nifti_export_folder, exam_import_folder, exam_export_folder, gpuid]
     print(*command)
 
-    cwd = pathlib.Path(__file__).resolve().parent
-    print(cwd)
 
     print("starting docker!")
     subprocess.run(command, cwd=cwd)
