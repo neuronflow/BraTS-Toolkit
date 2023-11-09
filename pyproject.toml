@@ -41,10 +41,10 @@ classifiers = [
 python = "^3.10"
 
 # core
-SimpleITK = "2.1.1.2"
+SimpleITK = "^2.3.1"
 numpy = "^1.23.0"
-python-engineio = "3.14.2"
-python-socketio = "4.6.1"
+python-engineio = "^3.14.2"
+python-socketio = "^4.6.1"
 requests = "^2.24.0"
 
 # pretty citation reminder
