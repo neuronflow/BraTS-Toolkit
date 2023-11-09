@@ -5,3 +5,5 @@ __pycache__
 docs/_build
 BraTS_Toolkit.egg-info
 brats_toolkit/_version.py
+poetry.lock
+
