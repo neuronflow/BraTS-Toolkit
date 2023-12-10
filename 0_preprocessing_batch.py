@@ -1,6 +1,3 @@
-import os
-from path import Path
-
 from brats_toolkit.preprocessor import Preprocessor
 
 # instantiate
