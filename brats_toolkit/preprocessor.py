@@ -1,17 +1,21 @@
-import socketio
-from brats_toolkit.util.docker_functions import start_docker, stop_docker, update_docker
 import os
+import sys
 import tempfile
 from pathlib import Path
 
+import socketio
+
+from brats_toolkit.util.citation_reminder import (
+    citation_reminder,
+    deprecated_preprocessor,
+)
+from brats_toolkit.util.docker_functions import start_docker, stop_docker, update_docker
 from brats_toolkit.util.prep_utils import tempFiler
-from brats_toolkit.util.citation_reminder import citation_reminder
-import sys
 
 
 class Preprocessor(object):
-
     @citation_reminder
+    @deprecated_preprocessor
     def __init__(self, noDocker=False):
         # settings
         self.clientVersion = "0.0.1"

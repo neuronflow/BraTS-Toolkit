@@ -1,8 +1,6 @@
-import os
 import datetime
 
 from brats_toolkit.segmentor import Segmentor
-
 
 # log
 starttime = str(datetime.datetime.now().time())

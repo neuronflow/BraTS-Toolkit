@@ -1,5 +1,3 @@
-import os
-from path import Path
 import datetime
 
 from brats_toolkit.fusionator import Fusionator
@@ -12,7 +10,7 @@ print("*** starting at", starttime, "***")
 fus = Fusionator(verbose=True)
 
 # input
-SOURCEDIR = Path("example_data/output_segmentor/TCGA-DU-7294/")
+SOURCEDIR = "example_data/output_segmentor/TCGA-DU-7294/"
 # output
 OUTPUTDIR = "example_data/output_fusionator/TCGA-DU-7294/"
 
