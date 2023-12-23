@@ -6,13 +6,12 @@
 # Please refer to README.md and LICENSE.md for further documentation
 # This software is not certified for clinical use.
 
-import sys
-import subprocess
-import pprint
 import argparse
+import pprint
+import subprocess
+import sys
 
-
-from . import segmentor, fusionator, preprocessor
+from . import fusionator, preprocessor, segmentor
 
 
 def list_dockers():
@@ -42,7 +41,7 @@ def list_docker_cpu():
         if seg.config[id]["runtime"] == "runc":
             print(id)
 
-    
+
 def fusion():
     parser = argparse.ArgumentParser(
         description="Runs the Docker orchestra to fuse segmentations. All inputs have to have equal shape and label values"
@@ -83,6 +82,7 @@ def fusion():
         pass
     except Exception as e:
         print("ERROR DETAIL: ", e)
+
 
 def segmentation():
     parser = argparse.ArgumentParser(
@@ -179,6 +179,7 @@ def segmentation():
     except Exception as e:
         print("ERROR DETAIL: ", e)
 
+
 def batchpreprocess():
     parser = argparse.ArgumentParser(
         description="Runs the preprocessing for MRI scans on a folder of images."
@@ -241,6 +242,7 @@ def batchpreprocess():
         pass
     except Exception as e:
         print("ERROR DETAIL: ", e)
+
 
 def singlepreprocess():
     parser = argparse.ArgumentParser(
