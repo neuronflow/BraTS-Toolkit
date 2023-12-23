@@ -1,12 +1,18 @@
-import shlex
-import platform
-import pathlib
-import subprocess
 import os
+import pathlib
+import platform
+import shlex
+import subprocess
 
 
-def start_docker(exam_import_folder=None,
-                 exam_export_folder=None, dicom_import_folder=None, nifti_export_folder=None, mode="cpu", gpuid='0'):
+def start_docker(
+    exam_import_folder=None,
+    exam_export_folder=None,
+    dicom_import_folder=None,
+    nifti_export_folder=None,
+    mode="cpu",
+    gpuid="0",
+):
     # deal with missing arguments
     if dicom_import_folder is None:
         dicom_import_folder = exam_import_folder
@@ -38,27 +44,30 @@ def start_docker(exam_import_folder=None,
 
     operatingSystem = platform.system()
     if operatingSystem == "Windows":
-        bashscript = os.path.join(cwd, os.path.normpath(
-            './backend_scripts/win_docker.cmd'))
+        bashscript = os.path.join(
+            cwd, os.path.normpath("./backend_scripts/win_docker.cmd")
+        )
     else:
         if mode == "cpu":
-            bashscript = os.path.normpath(
-                './backend_scripts/unix_docker.sh')
+            bashscript = os.path.normpath("./backend_scripts/unix_docker.sh")
         elif mode == "robex":
-            bashscript = os.path.normpath(
-                './backend_scripts/unix_docker.sh')
+            bashscript = os.path.normpath("./backend_scripts/unix_docker.sh")
         elif mode == "gpu":
-            bashscript = os.path.normpath(
-                './backend_scripts/unix_docker_gpu.sh')
+            bashscript = os.path.normpath("./backend_scripts/unix_docker_gpu.sh")
         elif mode == "gpu_hdbet":
-            bashscript = os.path.normpath(
-                './backend_scripts/unix_docker_gpu.sh')
+            bashscript = os.path.normpath("./backend_scripts/unix_docker_gpu.sh")
 
     # generate subprocess call
-    command = [bashscript, "3", dicom_import_folder,
-               nifti_export_folder, exam_import_folder, exam_export_folder, gpuid]
+    command = [
+        bashscript,
+        "3",
+        dicom_import_folder,
+        nifti_export_folder,
+        exam_import_folder,
+        exam_export_folder,
+        gpuid,
+    ]
     print(*command)
-
 
     print("starting docker!")
     subprocess.run(command, cwd=cwd)

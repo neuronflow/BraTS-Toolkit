@@ -4,20 +4,20 @@
 #
 # Please refer to README.md and LICENSE.md for further documentation
 # This software is not certified for clinical use.
-import os
-import logging
 import itertools
+import logging
 import math
+import os
+import os.path as op
 
 import numpy as np
-import os.path as op
-from .util import own_itk as oitk
+
 from .util import filemanager as fm
+from .util import own_itk as oitk
 from .util.citation_reminder import citation_reminder
 
 
 class Fusionator(object):
-
     @citation_reminder
     def __init__(self, verbose=True):
         self.verbose = verbose
