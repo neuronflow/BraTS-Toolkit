@@ -66,9 +66,29 @@ Please also cite the following original authors of the algorithms who make this 
 | scan-20 & scan_lite-20  | McKinley, R., Rebsamen, M., Dätwyler, K., Meier, R., Radojewski, P., & Wiest, R. (2021). Uncertainty-driven refinement of tumor-core segmentation using 3d-to-2d networks with label uncertainty. In Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, (pp. 401-411). Springer International Publishing.          |
 
 
+## Usage
+Checkout the Python examples in this repository for preprocessing (`0_preprocessing_single.py`), segmentation (`1_segmentation.py`) and fusion ()  TODO
 
-## Brats Preprocessor
+## Brats Segmentor
+BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations.
+For segmentation your files should be `preprocessed`, meaning they should be co-registered and skullstripped in SRI-24 space.
+You can preprocess your files using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) (recommended) or the deprecated preprocessor of BraTS Toolkit (see below).
+
+### Python package
+Please have a look at `1_segmentation.py` in this repository for a demo application.
+
+### Command Line Interface (CLI)
+Type `brats-segment -h` after installing the python package to see available options.
+
+## Brats Fusionator
+BraTS Fusionator can combine the resulting candidate segmentations into consensus segmentations using fusion methods such as majority voting and iterative SIMPLE fusion.
+### Python package
+Please have a look at `2_fusion.py` in this repository for a demo application.
+
+## Brats Preprocessor (deprecated)
 BraTS Preprocessor facilitates data standardization and preprocessing for researchers and clinicians alike. It covers the entire image analysis workflow prior to tumor segmentation, from image conversion and registration to brain extraction.
+
+> WARNING: BraTS Preprocessor is deprecated. It still works but we recommended using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) instead.
 
 ### Processing Modi
 BraTS Preprocessor offers the following preprocessing modes:
@@ -101,18 +121,6 @@ Type `brats-batch-preprocess -h` after installing the python package to see avai
 You can find instructions to use and download the GUI variant here: https://neuronflow.github.io/BraTS-Preprocessor/
 > WARNING: The GUI is not nicely maintained. We encourage you to use the python package or the CLI instead.
 
-## Brats Segmentor
-BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations.
-### Python package
-Please have a look at `1_segmentation.py` in this repository for a demo application.
-
-### Command Line Interface (CLI)
-Type `brats-segment -h` after installing the python package to see available options.
-
-## Brats Fusionator
-BraTS Fusionator can combine the resulting candidate segmentations into consensus segmentations using fusion methods such as majority voting and iterative SIMPLE fusion.
-### Python package
-Please have a look at `2_fusion.py` in this repository for a demo application.
 
 ### Command Line Interface (CLI)
 Type `brats-fuse -h` after installing the python package to see available options.
