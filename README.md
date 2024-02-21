@@ -67,7 +67,8 @@ Please also cite the following original authors of the algorithms who make this 
 
 
 ## Usage
-Checkout the Python examples in this repository for preprocessing (`0_preprocessing_single.py`), segmentation (`1_segmentation.py`) and fusion ()  TODO
+BrainLes features [Jupyter notebook tutorials](https://github.com/BrainLesion/tutorials/tree/main/BraTS-Toolkit) for glioma segmentation with BraTS Toolkit.
+Further, have a look at the Python examples in this repository for preprocessing (`0_preprocessing_single.py`), segmentation (`1_segmentation.py`) and fusion (`2_fusion.py`).
 
 ## Brats Segmentor
 BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations.
@@ -88,7 +89,7 @@ Please have a look at `2_fusion.py` in this repository for a demo application.
 ## Brats Preprocessor (deprecated)
 BraTS Preprocessor facilitates data standardization and preprocessing for researchers and clinicians alike. It covers the entire image analysis workflow prior to tumor segmentation, from image conversion and registration to brain extraction.
 
-> WARNING: BraTS Preprocessor is deprecated. It still works but we recommended using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) instead.
+> WARNING: BraTS Preprocessor is deprecated. It still works but we recommended using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) instead which offers much more flexibility.
 
 ### Processing Modi
 BraTS Preprocessor offers the following preprocessing modes:
