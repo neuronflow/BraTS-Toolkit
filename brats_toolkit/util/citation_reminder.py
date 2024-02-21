@@ -27,17 +27,22 @@ def deprecated_preprocessor(func):
         console = Console()
         console.rule("[bold red]Deprecation note[/bold red]")
         console.print(
-            "Support for BraTS Toolkit's preprocessor will be deprecated soon, even though it should continue working.",
+            "Deprecation Notice: Support for the BraTS Toolkit's preprocessor is now deprecated, although it is expected to remain functional.",
             justify="center",
         )
         console.print(
-            "You can already beta test the new BrainLes preprocessing: https://github.com/BrainLesion/preprocessing",
+            "Please note that this deprecation does not impact the segmentation and fusion module, which will continue to receive maintenance and support.",
             justify="center",
         )
         console.print(
-            "Unlike the original preprocessing from BraTS Toolkit, the new pipeline allows for arbitrary sequences, implements multiple backends for registration and brain extration and does not require docker.",
+            "We recommend transitioning to the BrainLes preprocessing tool available at: https://github.com/BrainLesion/preprocessing for preprocessing tasks.",
             justify="center",
         )
+        console.print(
+            "In contrast to the original BraTS Toolkit preprocessing, the new BrainLes pipeline offers the flexibility of arbitrary sequences, incorporates multiple backends for registration and brain extraction, and eliminates the need for Docker.",
+            justify="center",
+        )
+
         console.rule()
         console.line()
         func(*args, **kwargs)
