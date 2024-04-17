@@ -16,7 +16,7 @@ Abstract:
 
 
 ## Installation
-To install the most up to date version from the master branch please use the following pip install command:
+To install the most up-to-date version from the master branch, please use the following pip install command:
 ```
 pip install BraTS-Toolkit
 ```
@@ -26,11 +26,11 @@ We recommended installation in a virtual environment based on Python 3.10 .
 Further, NVIDIA Docker Toolkit needs to be installed (installation instructions here: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker and here: https://neuronflow.github.io/BraTS-Preprocessor/#dockerinstallation ).
 
 ## Issues
-When running into issues please use the issue tracker here on Github: https://github.com/neuronflow/BraTS-Toolkit/issues
+When running into issues, please use the issue tracker here on Github: https://github.com/neuronflow/BraTS-Toolkit/issues
 So others can profit and contribute as well.
 
 ## Citation
-If you use BraTS Toolkit please cite:
+If you use BraTS Toolkit, please cite:
 
 https://www.frontiersin.org/articles/10.3389/fnins.2020.00125/full
 
@@ -72,14 +72,14 @@ Further, have a look at the Python examples in this repository for preprocessing
 
 ## Brats Segmentor
 BraTS Segmentor enables orchestration of BraTS brain tumor segmentation algorithms for generation of fully-automated segmentations.
-For segmentation your files should be `preprocessed`, meaning they should be co-registered and skullstripped in SRI-24 space.
+For segmentation, your files should be `preprocessed`, meaning they should be co-registered and skullstripped in SRI-24 space.
 You can preprocess your files using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) (recommended) or the deprecated preprocessor of BraTS Toolkit (see below).
 
 ### Python package
 Please have a look at `1_segmentation.py` in this repository for a demo application.
 
 ### Command Line Interface (CLI)
-Type `brats-segment -h` after installing the python package to see available options.
+Type `brats-segment -h` after installing the Python package to see available options.
 
 ## Brats Fusionator
 BraTS Fusionator can combine the resulting candidate segmentations into consensus segmentations using fusion methods such as majority voting and iterative SIMPLE fusion.
@@ -89,7 +89,7 @@ Please have a look at `2_fusion.py` in this repository for a demo application.
 ## Brats Preprocessor (deprecated)
 BraTS Preprocessor facilitates data standardization and preprocessing for researchers and clinicians alike. It covers the entire image analysis workflow prior to tumor segmentation, from image conversion and registration to brain extraction.
 
-> WARNING: BraTS Preprocessor is deprecated. It still works but we recommended using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) instead which offers much more flexibility.
+> WARNING: BraTS Preprocessor is deprecated. It still works, but we recommended using [BrainLes preprocessing](https://github.com/BrainLesion/preprocessing) instead, which offers much more flexibility.
 
 ### Processing Modi
 BraTS Preprocessor offers the following preprocessing modes:
@@ -107,24 +107,24 @@ Activates mri-deface to deface using CPU.
 ### Single vs. batch processing
  BraTS preprocessor offers processing files in `batch` or `single` mode. Please have a look at the respective example scripts / CLI commands for information how to use them.
  
- For faster computation we strictly recommend the `batch` processing mode, which avoids additional overhead of spawning and shutting down multiple docker containers and instead does all the processing in one container.  
+ For faster computation, we strictly recommend the `batch` processing mode, which avoids the additional overhead of spawning and shutting down multiple docker containers and instead does all the processing in one container.  
 
 ### Python package
 Please have a look at `0_preprocessing_batch.py` and `0_preprocessing_single.py` in this repository for a demo application. You can download the example data by cloning this repository.
 
 ### Command Line Interface (CLI)
 #### single file processing
-Type `brats-preprocess -h` after installing the python package to see available options.
+Type `brats-preprocess -h` after installing the Python package to see available options.
 #### batch file processing
-Type `brats-batch-preprocess -h` after installing the python package to see available options.
+Type `brats-batch-preprocess -h` after installing the Python package to see available options.
 
 ### Graphical User Interface (GUI)
 You can find instructions to use and download the GUI variant here: https://neuronflow.github.io/BraTS-Preprocessor/
-> WARNING: The GUI is not nicely maintained. We encourage you to use the python package or the CLI instead.
+> WARNING: The GUI is not nicely maintained. We encourage you to use the Python package or the CLI instead.
 
 
 ### Command Line Interface (CLI)
-Type `brats-fuse -h` after installing the python package to see available options.
+Type `brats-fuse -h` after installing the Python package to see available options.
 
 ## Contact / Feedback / Questions
-Open an issue in this git repository or contact us per email.
+Open an issue in this git repository or contact us via email.
