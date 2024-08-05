@@ -31,7 +31,7 @@ def deprecated_preprocessor(func):
             justify="center",
         )
         console.print(
-            "Please note that this deprecation does not impact the segmentation and fusion module, which will continue to receive maintenance and support.",
+            "Please note that this deprecation does not impact the fusion module, which will continue to receive maintenance and support.",
             justify="center",
         )
         console.print(
@@ -40,6 +40,30 @@ def deprecated_preprocessor(func):
         )
         console.print(
             "In contrast to the original BraTS Toolkit preprocessing, the new BrainLes pipeline offers the flexibility of arbitrary sequences, incorporates multiple backends for registration and brain extraction, and eliminates the need for Docker.",
+            justify="center",
+        )
+
+        console.rule()
+        console.line()
+        func(*args, **kwargs)
+
+    return wrapper
+
+
+def deprecated_segmentor(func):
+    def wrapper(*args, **kwargs):
+        console = Console()
+        console.rule("[bold red]Deprecation note[/bold red]")
+        console.print(
+            "Deprecation Notice: Support for the BraTS Toolkit's segmentor is now deprecated, although it is expected to remain functional.",
+            justify="center",
+        )
+        console.print(
+            "Please note that this deprecation does not impact the fusion module, which will continue to receive maintenance and support.",
+            justify="center",
+        )
+        console.print(
+            "We recommend transitioning to the BrainLes segmentor tool available at: https://github.com/BrainLesion/BraTS for segmentation tasks.",
             justify="center",
         )
 
