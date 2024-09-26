@@ -1,6 +1,7 @@
 from rich.console import Console
 
 CITATION_LINK = "https://github.com/neuronflow/BraTS-Toolkit#citation"
+BRATS_LINK = "https://github.com/BrainLesion/BraTS/"
 
 
 def citation_reminder(func):
@@ -31,7 +32,7 @@ def deprecated_preprocessor(func):
             justify="center",
         )
         console.print(
-            "Please note that this deprecation does not impact the segmentation and fusion module, which will continue to receive maintenance and support.",
+            "Please note that this deprecation does not impact the segmentor and fusion module, which will continue to receive maintenance and support.",
             justify="center",
         )
         console.print(
@@ -43,6 +44,25 @@ def deprecated_preprocessor(func):
             justify="center",
         )
 
+        console.rule()
+        console.line()
+        func(*args, **kwargs)
+
+    return wrapper
+
+
+def new_segmentor_note(func):
+    def wrapper(*args, **kwargs):
+        console = Console()
+        console.rule("[bold cyan]New segmentor package[/bold cyan]")
+        console.print(
+            "We developed a new segmentation tool that provides the latest BraTS algorithms (2023 and later) along with various improvements and features.",
+            justify="center",
+        )
+        console.print(
+            f"While the BraTS Toolkit segementation module will remain functional for the old models we recommend transitioning to the new BraTS package available at: {BRATS_LINK} to get the latest models and features.",
+            justify="center",
+        )
         console.rule()
         console.line()
         func(*args, **kwargs)
